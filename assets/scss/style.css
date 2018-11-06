@@ -2,6 +2,76 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body .navbar {
+  color: white !important;
+  margin-top: 1vh;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+@media (max-width: 992px) {
+  body .navbar #navbarToggler {
+    background-color: black !important;
+  }
+}
+
+body .navbar .navbar-brand {
+  font-size: 5vh;
+  margin-left: 4vh;
+  margin-right: 0vh;
+  font-weight: bolder;
+}
+
+body .navbar .navbis {
+  width: 80%;
+}
+
+body .navbar .navbis li {
+  list-style: none;
+}
+
+body .navbar a {
+  color: white;
+  padding: 0%;
+  margin: 0%;
+}
+
+body .navbar a.home {
+  color: #e9383f;
+}
+
+body .navbar ul {
+  padding: 0% 0vh;
+  margin: 0%;
+}
+
+body .navbar ul li {
+  background-color: rgba(150, 150, 150, 0.5);
+  margin-right: 0.5vh;
+}
+
+body .navbar ul li:hover {
+  background-color: #e9383f;
+}
+
+body .navbar a.dropdown-item {
+  color: black !important;
+}
+
+body .navbar p {
+  margin: 0%;
+}
+
+body .navbar .searchNav {
+  padding: 0 0 0 0;
+  margin: 0 0 5vh 0;
+}
+
+body .navbar .searchNav input {
+  margin: 0%;
+  padding: 0 0 0 0;
+  border-radius: 15vh;
+}
+
 body .jumbotron {
   width: 100%;
   height: 70vh;

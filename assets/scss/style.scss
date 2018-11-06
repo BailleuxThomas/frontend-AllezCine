@@ -1,7 +1,70 @@
 //variable
 $grena: #e9383f;
+
 body{
     font-family: 'Montserrat', sans-serif;
+    //navbar
+    .navbar{
+        color: white!important;
+        margin-top: 1vh;
+        background-color: rgba($color: #000000, $alpha: 0.0)!important;
+        #navbarToggler{
+            @media (max-width: 992px){
+                background-color: rgba($color: #000000, $alpha: 1.0)!important;
+                }
+        }
+        //titre de la navbar (allezcine ici)
+        .navbar-brand{
+            font-size: 5vh;
+            margin-left: 4vh;
+            margin-right: 0vh;
+            font-weight: bolder;
+        }
+        .navbis{
+            width: 80%; 
+            li{
+                list-style: none;
+            }   
+        }
+
+        a{
+            color:white;
+            padding: 0%;
+            margin: 0%;
+        }
+        a.home{
+            color: $grena;
+        }
+        //menu déroulant
+        ul{
+            padding: 0% 0vh;
+            margin: 0%;
+            li{
+                background-color: rgba(150, 150, 150, 0.5);
+                margin-right: 0.5vh;
+                &:hover{
+                    background-color: rgba($color: $grena, $alpha: 1.0);
+                }
+            }
+        }
+        //stylise les dropdown links 
+        a.dropdown-item{
+            color: black!important;
+        }
+        p{
+            margin: 0%;
+        }
+        //search bar 
+        .searchNav{
+            padding: 0 0 0 0;
+            margin: 0 0 5vh 0;
+            input{
+                margin: 0%;
+                padding: 0 0 0 0;
+                border-radius: 15vh;
+            }
+        }
+    }
     .jumbotron{
         width: 100%;
         height: 70vh;
@@ -56,5 +119,3 @@ body{
         }
     }
 }
-
-
