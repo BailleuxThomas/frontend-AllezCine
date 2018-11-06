@@ -29,7 +29,9 @@ body .jumbotron div h2 {
 }
 
 body .jumbotron div p {
-  font-size: 3vh;
+  margin: 3vh 0 3vh 0;
+  font-size: 2vh;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 body .jumbotron div img {
@@ -40,13 +42,13 @@ body .jumbotron div img {
 body .jumbotron div .carousel-caption {
   width: auto;
   height: auto;
-  margin: 20vh;
+  margin: 18vh;
   padding: 0% !important;
 }
 
 @media (max-width: 992px) {
   body .jumbotron div .carousel-caption {
-    margin: 10vh;
+    margin: 9vh;
   }
 }
 

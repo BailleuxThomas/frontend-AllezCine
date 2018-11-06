@@ -20,7 +20,9 @@ body{
                 font-size: 8vh;
             }
             p{
-                font-size: 3vh;
+                margin: 3vh 0 3vh 0;
+                font-size: 2vh;
+                color: rgba($color: white, $alpha: 0.7)
             }
             img{
                 width: 100%;
@@ -30,9 +32,9 @@ body{
             .carousel-caption{
                 width: auto;
                 height: auto;
-                margin: 20vh;
+                margin: 18vh;
                 @media (max-width: 992px){
-                    margin: 10vh;
+                    margin: 9vh;
                 }
                 padding: 0%!important;
                 a{
