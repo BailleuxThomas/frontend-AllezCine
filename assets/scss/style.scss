@@ -1,10 +1,73 @@
+$background: #e3f2fd;
+$twitter: #00acee;
+$facebook: #3b5998;
+$insta: #3f729b;
+$google: #db3236;
+
 body {
-    background: #e3f2fd;
+    background: $background;
 }
 
 nav {
     i{
-margin-right: 1vh;
-color: red;
+        margin-left: 13px; //pas fini//
+    color: red;
     }
+}
+
+ul{ 
+    margin: 0vh;
+    padding: 0vh;
+    width: 25vh;
+    list-style-type: none;
+    a {
+        color: white;
+    }
+    a:hover{
+        color: YELLOW;
+        text-decoration: none;
+    }
+    li {
+        position: relative;
+        text-align: center;
+        right: 18vh;
+        transform: translateX(0%);
+        transition: all 0.6s ease;
+    }
+    li:hover{
+        right: 5vh;
+    }
+    i.fab{
+        width: 4vh;
+        position: absolute;
+        right: 1vh;
+        background: white;
+        border-radius: 50%;
+        line-height: inherit;
+        color: black;
+        }
+    li.twitter {
+        border: 3px solid $twitter;
+        border-left: none;
+        border-radius: 3vh;
+        background: $twitter;
+    }
+    li.facebook {
+        border: 3px solid $facebook;
+        border-left: none;
+        border-radius: 3vh;
+        background: $facebook;
+    }
+    li.insta {
+        border: 3px solid $insta;
+        border-left: none;
+        border-radius: 3vh;
+        background: $insta;
+    }
+    li.google {
+        border: 3px solid $google;
+        border-left: none;
+        border-radius: 3vh;
+        background: $google;
+    } 
 }
