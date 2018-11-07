@@ -21,37 +21,29 @@ body{
                 font-size: 3.3vh;
             }
         }
-        .formuContactDIV{
-            //debug
-            border: 3px black solid;
-            height: 85%;
-            width: 60%;
-            margin-left: 20%;
-            .FormuContact{
-                //debug
-                border: 3px saddlebrown solid;
+        #formulaire {
+            width: 80%;
+            height: 80%;
+            border: 5px solid #361e11;
+            color: black;
+            overflow: hidden;
+            .input-formu {
                 width: 100%;
-                height: 15%;
-                margin-top: 2%;
-                .formContactSub{
-                    width: 45%;
-                    margin-left: 2.5%;
-                    height: auto;
-                    input{
-                        padding:0%;
-                        height: 4vh;
-                    }
-                }
-                .formContactSub2{
-                    width: 45%;
-                    height: auto; 
-                    margin-left: 5%;
-                    input{
-                        padding:0%;
-                        height: 4vh;
-                    }
-                }
             }
         }
+        @media (max-width: 992px) {
+            #formulaire {
+              border: 5px solid #361e11;
+              height: 80%;
+            }
+        }
+        @media (max-width: 992px) {
+            .input-formu {
+              width: 100%;
+            }
+        }
+        #FormuSubDIV {
+            height: 100%;
+        }         
     }
 }

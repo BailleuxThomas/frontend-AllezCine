@@ -18,39 +18,32 @@ body .contactDIV .contactTitle .H3ContactTitle {
   font-size: 3.3vh;
 }
 
-body .contactDIV .formuContactDIV {
-  border: 3px black solid;
-  height: 85%;
-  width: 60%;
-  margin-left: 20%;
+body .contactDIV #formulaire {
+  width: 80%;
+  height: 80%;
+  border: 5px solid #361e11;
+  color: black;
+  overflow: hidden;
 }
 
-body .contactDIV .formuContactDIV .FormuContact {
-  border: 3px saddlebrown solid;
+body .contactDIV #formulaire .input-formu {
   width: 100%;
-  height: 15%;
-  margin-top: 2%;
 }
 
-body .contactDIV .formuContactDIV .FormuContact .formContactSub {
-  width: 45%;
-  margin-left: 2.5%;
-  height: auto;
+@media (max-width: 992px) {
+  body .contactDIV #formulaire {
+    border: 5px solid #361e11;
+    height: 80%;
+  }
 }
 
-body .contactDIV .formuContactDIV .FormuContact .formContactSub input {
-  padding: 0%;
-  height: 4vh;
+@media (max-width: 992px) {
+  body .contactDIV .input-formu {
+    width: 100%;
+  }
 }
 
-body .contactDIV .formuContactDIV .FormuContact .formContactSub2 {
-  width: 45%;
-  height: auto;
-  margin-left: 5%;
-}
-
-body .contactDIV .formuContactDIV .FormuContact .formContactSub2 input {
-  padding: 0%;
-  height: 4vh;
+body .contactDIV #FormuSubDIV {
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
