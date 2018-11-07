@@ -1,21 +1,23 @@
-$background: #e3f2fd;
+$background: black;
 $twitter: #00acee;
 $facebook: #3b5998;
 $insta: #3f729b;
 $google: #db3236;
-
+$footerrelease: grey;
+$footermovie: grey;
+$footerlatestmovies: grey;
 body {
     background: $background;
 }
 
 nav {
     i{
-        margin-left: 13px; //pas fini//
+    margin-left: 13px; //pas fini//
     color: red;
     }
 }
 
-ul{ 
+ul.menuleft{ 
     margin: 0vh;
     padding: 0vh;
     width: 25vh;
@@ -70,4 +72,132 @@ ul{
         border-radius: 3vh;
         background: $google;
     } 
+}
+
+footer{
+    margin: 0vh 0 0 5vh;
+    padding: 0vh;
+    color: white;
+    .footmarge{
+    margin-top: 4vh;
+    }
+    ul{
+        padding:0;
+        li{
+            list-style-type: none;
+        }
+    }
+    a{
+        display: block;
+        height: fit-content;
+        margin:0;
+        padding:0;
+        color: white;
+        justify-content: left;
+    }
+    .imagefooter{
+        padding: 0;
+        margin: 0;
+        width: 140%;
+        }
+    h2{
+        color: #dc3545;
+        text-align: center;
+    }
+    ul.release{
+        li.footrelease{
+            a{
+                color: $footerrelease;
+                text-decoration: none;
+            }
+        }
+    }
+    ul.movies{
+        li.footmovies{
+            a{
+                color: $footermovie;
+                text-decoration: none;
+            }
+        }
+    }
+    .Category a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        padding: 5px;
+        margin-bottom: 1vh;
+        height: auto;
+        background-color: grey;
+    }
+    ul.lastmovies{
+        li{
+            img{
+                color: $footerlatestmovies;
+            }
+        }
+    }
+    h4{
+        font-size: 2vh;
+    }
+    h4.video{ // pas fini//
+        color: #dc3545;
+        font-size: 5vh;
+        text-align: left;
+        // font-family: 'Anton', sans-serif;
+        span{
+            color: white;
+        }
+    }
+    .divsub{
+        margin-bottom: 5vh;
+    }
+    li.footlogo{
+    margin-bottom: 1vh;
+    }
+    .footborder{
+    height: fit-content;
+    border-bottom: 0.1vh solid yellow;
+}
+.row{
+    .col-lg-12{
+        .connectus{
+            font-size: 3vh;
+    }
+              }
+}
+
+
+#arrow{
+    padding: 0;
+    margin: 0;
+    width: inherit;
+    position: absolute;
+    margin:0;
+    font-size: 7vh;
+    border: 0.4vh solid red;
+    border-radius: 50%;
+    color: white;
+    background: black;
+}
+.col-lg-12 .footerfin{
+    font-size: 2vh;
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+            color: orangered;
+    }
+    i{
+        margin-right: 1vh;
+        padding: 1vh;
+        border: 0.2vh solid grey;
+    }
+}
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+}
 }
