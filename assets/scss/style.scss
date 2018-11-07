@@ -23,10 +23,13 @@ body{
         }
         #formulaire {
             width: 80%;
-            height: 80%;
+            height: auto;
             border: 5px solid #361e11;
             color: black;
             overflow: hidden;
+            #FormuContactUS{
+                display: none;
+            }
             .input-formu {
                 width: 100%;
             }

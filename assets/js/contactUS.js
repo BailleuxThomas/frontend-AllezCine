@@ -2,6 +2,7 @@ const ButtonMessage = document.getElementById("ButtonMessage");
 const FormuContactUS = document.getElementById("FormuContactUS");
 
 ButtonMessage.addEventListener("click", function(){
-    FormuContactUS.style.display = "block"; 
+    console.log("yes");
+    FormuContactUS.style.display = "block"; //affiche le formulaire
 });
-//ContactFormu.style.display = "block"; 
+//FormuContactUS.style.display = "block"; 

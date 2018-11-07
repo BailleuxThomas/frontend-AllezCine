@@ -20,10 +20,14 @@ body .contactDIV .contactTitle .H3ContactTitle {
 
 body .contactDIV #formulaire {
   width: 80%;
-  height: 80%;
+  height: auto;
   border: 5px solid #361e11;
   color: black;
   overflow: hidden;
+}
+
+body .contactDIV #formulaire #FormuContactUS {
+  display: none;
 }
 
 body .contactDIV #formulaire .input-formu {
