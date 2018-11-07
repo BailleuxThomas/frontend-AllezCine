@@ -1,7 +1,7 @@
 body .contactDIV {
   border: 3px solid green;
   width: 100%;
-  height: 55vh;
+  height: 75vh;
 }
 
 body .contactDIV .contactTitle {
@@ -40,7 +40,7 @@ body .contactDIV .formuContactDIV .FormuContact .formContactSub {
 
 body .contactDIV .formuContactDIV .FormuContact .formContactSub input {
   padding: 0%;
-  height: auto;
+  height: 4vh;
 }
 
 body .contactDIV .formuContactDIV .FormuContact .formContactSub2 {
@@ -51,6 +51,6 @@ body .contactDIV .formuContactDIV .FormuContact .formContactSub2 {
 
 body .contactDIV .formuContactDIV .FormuContact .formContactSub2 input {
   padding: 0%;
-  height: auto;
+  height: 4vh;
 }
 /*# sourceMappingURL=style.css.map */
