@@ -14,7 +14,7 @@ body .contactDIV .contactTitle .H3ContactTitle {
   margin-left: 07%;
   padding-left: 01%;
   font-weight: bold;
-  font-size: 3.3vh;
+  font-size: 5vh;
 }
 
 body .contactDIV #ButtonMessage {
@@ -43,7 +43,11 @@ body .contactDIV #formulaire #FormuSubDIV #FormuContactUS {
 body .contactDIV #formulaire #FormuSubDIV #FormuContactUS .btnContactUS {
   background-color: #e9383f;
   color: white;
-  margin-bottom: 0.5%;
+}
+
+body .contactDIV #formulaire #FormuSubDIV #FormuContactUS .btnCancelMessage {
+  background-color: #e9383f;
+  color: white;
 }
 
 body .contactDIV #formulaire #FormuSubDIV .input-formu {
