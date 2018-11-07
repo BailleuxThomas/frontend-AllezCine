@@ -16,10 +16,12 @@
         <div class="contactTitle">
             <h3 class="H3ContactTitle d-flex align-items-center">CONTACT US</h3>
         </div>
+        <div class="ButtonDiv d-flex justify-content-center">
+            <button id="ButtonMessage">Click to Contact us</button>
+        </div>
         <div class="container-fluid" id="formulaire">
             <div class="row d-flex justify-content-center align-items-center" id="FormuSubDIV">
-                <div class="col-lg-9">
-                    <button id="ButtonMessage">Click To Send US A Message</button>
+                <div class="col-lg-12">
                     <form class="FormuContactUS col-lg-12" id="FormuContactUS">
                         <div class="row d-flex justify-content-center">
                             <div class="col-lg-6 col-12 formu-3info">
@@ -43,7 +45,7 @@
                             <label for="textarea"></label>
                             <textarea id="textarea" class="form-control" rows="4" placeholder="Your Message"></textarea>
                         </div>
-                        <button class="btn" type="submit">
+                        <button class="btnContactUS" id="buttonSendContactUS" type="submit">
                             <i class="fas fa-share-square"></i>SEND MESSAGE
                         </button>
                     </form>

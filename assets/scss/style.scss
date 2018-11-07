@@ -5,8 +5,7 @@ $grena: #e9383f;
 body{
     //Section Contact-US
     .contactDIV{
-        //debug
-        border: 3px solid green;
+        //border: 3px solid green;
         width: 100%;
         height: 75vh;
         .contactTitle{
@@ -21,32 +20,39 @@ body{
                 font-size: 3.3vh;
             }
         }
+        #ButtonMessage{
+            margin: 1% 0;
+            background-color: #e9383f;
+            color: white;
+            width: 20%;
+        }
         #formulaire {
             width: 80%;
-            height: auto;
-            border: 5px solid #361e11;
+            border: 2.5px solid black;
             color: black;
-            overflow: hidden;
-            #FormuContactUS{
-                display: none;
-            }
-            .input-formu {
-                width: 100%;
+            background-color: white;
+            height: fit-content;
+            display: none;
+            #FormuSubDIV{
+                #FormuContactUS{
+                    height: fit-content;
+                    //border: 3px solid red;
+                    .btnContactUS{
+                        background-color: #e9383f;
+                        color: white;
+                        margin-bottom: 0.5%; 
+                    }
+                }
+                .input-formu {
+                    width: 100%;
+                }
             }
         }
         @media (max-width: 992px) {
             #formulaire {
               border: 5px solid #361e11;
-              height: 80%;
+              //height: 80%;
             }
-        }
-        @media (max-width: 992px) {
-            .input-formu {
-              width: 100%;
-            }
-        }
-        #FormuSubDIV {
-            height: 100%;
-        }         
+        }        
     }
 }

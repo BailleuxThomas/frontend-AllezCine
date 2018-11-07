@@ -1,8 +1,9 @@
 const ButtonMessage = document.getElementById("ButtonMessage");
-const FormuContactUS = document.getElementById("FormuContactUS");
+const formulaire = document.getElementById("formulaire");
+const buttonSendContactUS = document.getElementById("buttonSendContactUS");
 
 ButtonMessage.addEventListener("click", function(){
     console.log("yes");
-    FormuContactUS.style.display = "block"; //affiche le formulaire
+    formulaire.style.display = "block"; //affiche le formulaire
 });
-//FormuContactUS.style.display = "block"; 
+//formulaire.style.display = "block"; 

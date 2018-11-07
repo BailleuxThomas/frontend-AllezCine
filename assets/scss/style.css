@@ -1,5 +1,4 @@
 body .contactDIV {
-  border: 3px solid green;
   width: 100%;
   height: 75vh;
 }
@@ -18,36 +17,43 @@ body .contactDIV .contactTitle .H3ContactTitle {
   font-size: 3.3vh;
 }
 
-body .contactDIV #formulaire {
-  width: 80%;
-  height: auto;
-  border: 5px solid #361e11;
-  color: black;
-  overflow: hidden;
+body .contactDIV #ButtonMessage {
+  margin: 1% 0;
+  background-color: #e9383f;
+  color: white;
+  width: 20%;
 }
 
-body .contactDIV #formulaire #FormuContactUS {
+body .contactDIV #formulaire {
+  width: 80%;
+  border: 2.5px solid black;
+  color: black;
+  background-color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: none;
 }
 
-body .contactDIV #formulaire .input-formu {
+body .contactDIV #formulaire #FormuSubDIV #FormuContactUS {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body .contactDIV #formulaire #FormuSubDIV #FormuContactUS .btnContactUS {
+  background-color: #e9383f;
+  color: white;
+  margin-bottom: 0.5%;
+}
+
+body .contactDIV #formulaire #FormuSubDIV .input-formu {
   width: 100%;
 }
 
 @media (max-width: 992px) {
   body .contactDIV #formulaire {
     border: 5px solid #361e11;
-    height: 80%;
   }
-}
-
-@media (max-width: 992px) {
-  body .contactDIV .input-formu {
-    width: 100%;
-  }
-}
-
-body .contactDIV #FormuSubDIV {
-  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
