@@ -1,11 +1,11 @@
 body .contactDIV {
   border: 3px solid green;
   width: 100%;
-  height: 50vh;
+  height: 55vh;
 }
 
 body .contactDIV .contactTitle {
-  height: 20%;
+  height: 15%;
 }
 
 body .contactDIV .contactTitle .H3ContactTitle {
@@ -15,5 +15,42 @@ body .contactDIV .contactTitle .H3ContactTitle {
   margin-left: 07%;
   padding-left: 01%;
   font-weight: bold;
+  font-size: 3.3vh;
+}
+
+body .contactDIV .formuContactDIV {
+  border: 3px black solid;
+  height: 85%;
+  width: 60%;
+  margin-left: 20%;
+}
+
+body .contactDIV .formuContactDIV .FormuContact {
+  border: 3px saddlebrown solid;
+  width: 100%;
+  height: 15%;
+  margin-top: 2%;
+}
+
+body .contactDIV .formuContactDIV .FormuContact .formContactSub {
+  width: 45%;
+  margin-left: 2.5%;
+  height: auto;
+}
+
+body .contactDIV .formuContactDIV .FormuContact .formContactSub input {
+  padding: 0%;
+  height: auto;
+}
+
+body .contactDIV .formuContactDIV .FormuContact .formContactSub2 {
+  width: 45%;
+  height: auto;
+  margin-left: 5%;
+}
+
+body .contactDIV .formuContactDIV .FormuContact .formContactSub2 input {
+  padding: 0%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
