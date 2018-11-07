@@ -1,15 +1,32 @@
 /* line 10, ../sass/style.scss */
-body {
-  margin: 0 auto;
-  max-width: 850px;
+html {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* line 14, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 18, ../sass/style.scss */
+.titleSection {
+  padding-left: 10px;
+  border-left: 5px solid #FF4037;
+  line-height: 1.5em;
+}
+
+/* line 24, ../sass/style.scss */
+body {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* line 28, ../sass/style.scss */
 .wrapper {
   width: 600px;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .connectBar {
   widows: 100%;
   height: 40px;
@@ -17,62 +34,140 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .newsMovie, .featuredMovies {
   width: 100%;
-  height: 400px;
+  margin-bottom: 50px;
   overflow: hidden;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-/* line 34, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 .newsMovie .movieContainer, .featuredMovies .movieContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: black;
-  padding: 20px;
+  padding: 10px;
   height: fit-content;
   border-radius: 5px;
   border: 2px solid #F2F2F2;
 }
-/* line 42, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .newsMovie .movieContainer .affiche, .featuredMovies .movieContainer .affiche {
-  height: 100px;
-  width: 180px;
-  height: fit-content;
+  height: 200px;
+  width: 105px;
   padding: 0;
-  margin: 0;
+  margin: 5px;
   color: #4B5155;
+  overflow: hidden;
+  position: relative;
 }
-/* line 49, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .newsMovie .movieContainer .affiche img, .featuredMovies .movieContainer .affiche img {
-  width: 110px;
-  height: 170px;
+  width: 100%;
+  height: 77%;
 }
-/* line 53, ../sass/style.scss */
-.newsMovie .movieContainer .affiche .title, .featuredMovies .movieContainer .affiche .title {
-  font-size: 0.8em;
+/* line 67, ../sass/style.scss */
+.newsMovie .movieContainer .affiche .afficheFooter, .featuredMovies .movieContainer .affiche .afficheFooter {
+  background: white;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+/* line 72, ../sass/style.scss */
+.newsMovie .movieContainer .affiche .afficheFooter .title, .featuredMovies .movieContainer .affiche .afficheFooter .title {
+  font-size: 0.7em;
   margin-bottom: 0;
   text-align: center;
 }
-/* line 58, ../sass/style.scss */
-.newsMovie .movieContainer .affiche .date, .newsMovie .movieContainer .affiche .genre, .featuredMovies .movieContainer .affiche .date, .featuredMovies .movieContainer .affiche .genre {
+/* line 77, ../sass/style.scss */
+.newsMovie .movieContainer .affiche .afficheFooter .date, .newsMovie .movieContainer .affiche .afficheFooter .genre, .featuredMovies .movieContainer .affiche .afficheFooter .date, .featuredMovies .movieContainer .affiche .afficheFooter .genre {
   font-size: 0.6em;
   text-align: left;
   width: 45%;
   display: inline-block;
   margin: 0;
 }
-/* line 65, ../sass/style.scss */
-.newsMovie .movieContainer .affiche .genre, .featuredMovies .movieContainer .affiche .genre {
+/* line 84, ../sass/style.scss */
+.newsMovie .movieContainer .affiche .afficheFooter .genre, .featuredMovies .movieContainer .affiche .afficheFooter .genre {
   text-align: right;
   font-weight: 700;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
+.btn-select-cat {
+  margin-bottom: 20px;
+  padding: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+/* line 101, ../sass/style.scss */
+.btn-select-cat .btn {
+  font-size: 0.6em;
+  width: 60px;
+  line-height: 1.7em;
+  padding: 5px;
+  background: #F2F0F1;
+  border-radius: 0;
+  color: #4B5155;
+}
+/* line 110, ../sass/style.scss */
+.btn-select-cat .btn:last-of-type {
+  color: #F2F0F1;
+}
+/* line 113, ../sass/style.scss */
+.btn-select-cat .btn.active {
+  color: #fff;
+  background: #FF4037;
+}
+/* line 117, ../sass/style.scss */
+.btn-select-cat .btn:hover {
+  color: #4B5155;
+  background: #fff;
+}
+
+/* line 125, ../sass/style.scss */
+.btn:focus, .btn.focus {
+  box-shadow: none;
+}
+
+/* line 129, ../sass/style.scss */
+.btn.more-movie {
+  background: #FF4037;
+  color: #fff;
+  border-radius: 0px;
+  font-size: 0.8em;
+}
+
+/* line 136, ../sass/style.scss */
+.featuredMovies {
+  padding: 0px;
+}
+/* line 139, ../sass/style.scss */
+.featuredMovies .movieContainer {
+  justify-content: start;
+  border: none;
+  padding: 0;
+  width: fit-content;
+}
+/* line 144, ../sass/style.scss */
+.featuredMovies .movieContainer .affiche {
+  height: 200px;
+  width: 105px;
+  padding: 0;
+  margin: 3px 3px 15px 3px;
+}
+/* line 151, ../sass/style.scss */
+.featuredMovies .title {
+  font-weight: 700;
+}
+/* line 154, ../sass/style.scss */
 .featuredMovies .genre {
   visibility: hidden;
 }
 
 /* modal */
+/* line 162, ../sass/style.scss */
+.none {
+  display: none;
+}

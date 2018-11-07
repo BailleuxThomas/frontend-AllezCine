@@ -3,13 +3,27 @@
 $colorRed : #FF4037;
 $colorGrey : #4B5155;
 $colorClear : #F2F0F1;
+$colorWhite : #fff;
+// font
+$fontMontserrat : 'Montserrat', sans-serif;
 
 html {
+    font-family: $fontMontserrat;
+}
+
+h1,h2,h3,h4,h5,h6,p,a, {
+    font-family: $fontMontserrat;
+}
+
+.titleSection {
+    padding-left: 10px;
+    border-left: 5px solid $colorRed;
+    line-height: 1.5em;
 }
 
 body {
     margin: 0 auto;
-    max-width: 850px;
+    max-width: 800px;
 }
 .wrapper {
     width: 600px;
@@ -22,36 +36,41 @@ body {
     margin-bottom: 10px;
 }
 
-
 // section New Movie
 .newsMovie, .featuredMovies {
     width: 100%;
-    height: 400px;
+    margin-bottom: 50px;
     overflow: hidden;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
             .movieContainer {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 color: black;
-                padding: 20px;
+                padding: 10px;
                 height: fit-content;
                 border-radius: 5px;
                 border: 2px solid #F2F2F2;
                 .affiche {
-                    height: 100px;
-                    width: 180px;
-                    height: fit-content;
+                    height: 200px;
+                    width: 105px;                
                     padding: 0;
-                    margin: 0;
+                    margin: 5px;
                     color: $colorGrey;
+                    overflow: hidden;
+                    position: relative;
                     img {
-                        width: 110px;
-                        height: 170px;
+                        width: 100%;
+                        height: 77%;
                     }
+                    .afficheFooter {
+                    background: white;
+                    position: absolute;
+                    bottom: 0px;
+                    width: 100%;
                     .title {
-                        font-size: 0.8em;
+                        font-size: 0.7em;
                         margin-bottom: 0;
                         text-align: center;
                     }
@@ -66,14 +85,80 @@ body {
                         text-align: right;
                         font-weight: 700;
                     }
+                }
             }
 
             }
 }
+
+// section featured Movies
+// btn de catégorie
+.btn-select-cat {
+    // width: 605px;
+    margin-bottom: 20px;
+    padding: 3px;
+    font-family: $fontMontserrat;
+    .btn {
+        font-size: 0.6em;
+        width: 60px;
+        line-height: 1.7em;
+        padding: 5px;
+        background: $colorClear;
+        border-radius: 0;
+        color: $colorGrey;
+    }
+    .btn:last-of-type {
+        color: $colorClear;
+    }
+    .btn.active {
+        color: $colorWhite;
+        background: $colorRed;
+    }
+    .btn:hover {
+        color: $colorGrey;
+        background: $colorWhite;
+    }
+
+}
+
+// annulation btn focus effect
+.btn:focus, .btn.focus {
+	box-shadow: none;
+}
+
+.btn.more-movie {
+    background: $colorRed;
+    color: $colorWhite;
+    border-radius: 0px;
+    font-size: 0.8em;
+}
+
 .featuredMovies {
+    padding: 0px;
+
+    .movieContainer {
+        justify-content: start;
+        border: none;
+        padding: 0;
+        width: fit-content;
+        .affiche {
+            height: 200px;
+            width: 105px;        
+            padding: 0;
+            margin: 3px 3px 15px 3px;
+        }
+    }
+    .title {
+        font-weight: 700;
+    }
     .genre {
         visibility: hidden;
     }
+
 }
 
 /* modal */
+
+.none {
+    display: none;
+}
