@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="entree.css">
+</head>
+
+<body>
+    <!-- Age verification, disapear when "Entrer" is clicked, redirect on imdb when "sortir" is clicked -->
+    <div class="hideContent">
+        <div id="ageCheckBox">
+            <p>Pour accéder à ce site, vous devez être majeur.</p>
+            <p>Veuillez cliquer sur sortir si vous avez moins de 18 ans.</p>
+            <button id="goIn">Entrer</button>
+            <button id="goOut">Sortir</button>
+        </div>
+    </div>
+
+    <!-- Button opening login form -->
+    <button id="login">Login</button>
+
+    <!-- login form box -->
+    <div id="loginBox" class="modal">
+        <span class="close" title="Close Modal">&timesb;</span>
+
+        <form action="login" class="modal-content animate">
+            <div class="container">
+                <label for="uname"><b>Nom d'utilisateur</b></label>
+                <input type="text" placeholder="Nom d'utilisateur" name="uname" required>
+
+                <label for="psw"><b>Mot de passe</b></label>
+                <input type="password" placeholder="Mot de passe" name="psw" required>
+
+                <button type="submit">Ok</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+                </label>
+
+                <button type="button" class="register">Créer un compte</button>
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelBtn">Annuler</button>
+                <span class="psw"><a href="#">Mot de passe oublié</a></span>
+            </div>
+        </form>
+    </div>
+
+    <!-- Button opening register form-->
+    <button class="register">Register</button>
+
+    <!-- Register form box -->
+    <div id="registerBox" class="modal">
+        <span class="close" title="Close Modal">&timesb;</span>
+
+        <form action="register" class="modal-content animate">
+            <div class="container">
+                <h2>Créez un compte</h2>
+                <p>Remplissez ce formulaire pour créer votre compte.</p>
+                <hr>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Entrer Email" name="email" required>
+
+                <label for="psw-register"><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer mot de passe" name="psw-register" required>
+
+                <label for="psw-repeat"><b>Répéter mot de passe</b></label>
+                <input type="password" placeholder="Répéter mot de passe" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+                </label>
+
+                <p>En créant un compte, vous acceptez nos <a href="#">Conditions d'utilisation</a> et <a href="#">Politique
+                        de confidentialité</a></p>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelBtn">Annuler</button>
+                    <button type="submit" class="signupBtn">S'inscrire</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/ac.js"></script>
+</body>
+
+</html>
