@@ -28,7 +28,7 @@ body{
         }
         #formulaire {
             width: 80%;
-            border: 2.5px solid black;
+            //border: 2.5px solid black;
             color: black;
             background-color: white;
             height: fit-content;
@@ -47,12 +47,6 @@ body{
                     width: 100%;
                 }
             }
-        }
-        @media (max-width: 992px) {
-            #formulaire {
-              border: 5px solid #361e11;
-              //height: 80%;
-            }
-        }        
+        }       
     }
 }

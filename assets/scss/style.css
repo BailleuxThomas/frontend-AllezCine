@@ -26,7 +26,6 @@ body .contactDIV #ButtonMessage {
 
 body .contactDIV #formulaire {
   width: 80%;
-  border: 2.5px solid black;
   color: black;
   background-color: white;
   height: -webkit-fit-content;
@@ -49,11 +48,5 @@ body .contactDIV #formulaire #FormuSubDIV #FormuContactUS .btnContactUS {
 
 body .contactDIV #formulaire #FormuSubDIV .input-formu {
   width: 100%;
-}
-
-@media (max-width: 992px) {
-  body .contactDIV #formulaire {
-    border: 5px solid #361e11;
-  }
 }
 /*# sourceMappingURL=style.css.map */
