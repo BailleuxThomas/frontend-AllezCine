@@ -28,36 +28,67 @@
       // function pour afficher selon la catégorie 
     function selectCat(cat) {
         document.querySelector(".featuredMovies>.movieContainer").innerHTML = ""
-        for (let i = 0; i < array.length; i++) {
+        for (let i = 0; i < 6; i++) {
           element = array[i]
             if(array[i].genre == cat) {
-              document.querySelector(".featuredMovies>.movieContainer").innerHTML += 
-              `
-             <figure class="affiche">
-                 <img src="img/${element.src}.jpg" alt="${element.alt}" data-toggle="modal" data-target="#exampleModalCenter">
-                 <div class=afficheFooter>
-                   <p class="title">${element.title}</p>
-                   <p class="date">${element.date}</p>
-                   <p class="genre">${element.genre}</p>
-                 </div>
-               </figure>
-               `
+              document.querySelector(".featuredMovies>.movieContainer").innerHTML += afficheMaker(element)
               }
               else if (cat == "all"){
-                  document.querySelector(".featuredMovies>.movieContainer").innerHTML += 
-              `
-             <figure class="affiche">
-                 <img src="img/${element.src}.jpg" alt="${element.alt}" data-toggle="modal" data-target="#exampleModalCenter">
-                 <div class=afficheFooter>
-                   <p class="title">${element.title}</p>
-                   <p class="date">${element.date}</p>
-                   <p class="genre">${element.genre}</p>
-                 </div>
-               </figure>
-               `
+                  document.querySelector(".featuredMovies>.movieContainer").innerHTML += afficheMaker(element)
               }
               }
             }
-        
+            // function pour afficher plus de résultat
+
+            function affReduce() {
+              document.querySelector(".featuredMovies>.movieContainer").innerHTML = ""
+              for (let i = 0; i < 6; i++) {
+                element = array[i]
+                    document.querySelector(".featuredMovies>.movieContainer").innerHTML += afficheMaker(element)
+                  }
+                  document.querySelector(".featuredMovies>div>.more-movie").innerHTML = "PLUS DE FILMS"
+                  document.querySelector(".featuredMovies>div>.more-movie").setAttribute("onClick", "affMore()")
+            }
+            function affMore() {
+              for (let i = 0; i < 6; i++) {
+              newList = []
+              val = document.querySelectorAll(".featuredMovies>.movieContainer>.affiche>.afficheFooter>.title")
+              val.forEach(elem => {
+                newList.push(elem.innerHTML)
+              });
+              let element = array.find((x, y) => {
+                return x.title != newList[y]
+    
+              })
+              console.log(element)
+              document.querySelector(".featuredMovies>.movieContainer").innerHTML += afficheMaker(element)
+
+               if (val.length+1 == array.length){
+                document.querySelector(".featuredMovies>div>.more-movie").innerHTML = "MOINS DE FILMS"
+                document.querySelector(".featuredMovies>div>.more-movie").setAttribute("onClick", "affReduce()")
+
+               }
+               console.log(document.querySelector(".featuredMovies>div>.more-movie").innerHTML)
+               console.log(val.length)
+               console.log(array.length)
+
+              }
+              }
+              // affiche constructeur JS 
+              function afficheMaker(object) {
+                return `
+                <figure class="affiche">
+                    <img src="img/${object.src}.jpg" alt="${object.alt}" data-toggle="modal" data-target="#exampleModalCenter">
+                    <div class=afficheFooter>
+                      <p class="title">${object.title}</p>
+                      <p class="date">${object.date}</p>
+                      <p class="genre">${object.genre}</p>
+                    </div>
+                  </figure>
+                  `
+
+              }
+
+              
 
 
