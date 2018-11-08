@@ -136,41 +136,69 @@ footer .footborder {
   height: fit-content;
   border-bottom: 0.1vh solid yellow;
 }
-footer .row .col-lg-12 .connectus {
+
+.row .col-lg-12 .connectus {
   font-size: 3vh;
 }
-footer #arrow {
+
+#arrow {
   padding: 0;
   margin: 0;
   width: inherit;
-  position: absolute;
   margin: 0;
   font-size: 7vh;
   border: 0.4vh solid red;
-  border-radius: 50%;
-  color: white;
-  background: black;
+  border-radius: 100%;
+  color: black;
+  background: white;
+  position: fixed;
+  bottom: 10px;
+  right: -110px;
+  opacity: 1;
 }
-footer .col-lg-12 .footerfin {
+#arrow .arrow:hover {
+  color: black;
+}
+
+.col-lg-12 .footerfin {
   font-size: 2vh;
 }
-footer .col-lg-12 .footerfin a {
+.col-lg-12 .footerfin a {
   text-decoration: none;
 }
-footer .col-lg-12 .footerfin a:hover {
+.col-lg-12 .footerfin a:hover {
   color: orangered;
 }
-footer .col-lg-12 .footerfin i {
+.col-lg-12 .footerfin i {
   margin-right: 1vh;
   padding: 1vh;
   border: 0.2vh solid grey;
 }
-footer .mystyle {
+
+.mystyle {
   width: 100%;
   padding: 25px;
   background-color: coral;
   color: white;
   font-size: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .imagefooter {
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  footer .imagefooter2 {
+    padding: 0;
+    margin: 0;
+    width: 10vh;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .imagefooter2 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

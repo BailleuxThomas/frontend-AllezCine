@@ -1,28 +1,17 @@
-
-// function createElement() {
-//     scrollTo(document.body, 0, 600);
-//   }
-//   let scrollme;
-// scrollme = document.querySelector("#scrollme");
-// scrollme.addEventListener("click",runScroll,false)
-
-// function scrollTo(element, to, duration) {
-//   if (duration <= 0) return;
-//   let difference = to - element.scrollTop;
-//   let perTick = difference / duration * 10;
-
-//   setTimeout(function() {
-//     element.scrollTop = element.scrollTop + perTick;
-//     if (element.scrollTop == to) return;
-//     scrollTo(element, to, duration - 10);
-//   }, 10);
-// }
-
 let arrow = document.createElement("i");
+arrow.setAttribute("onclick", "scrollWin()");
 arrow.setAttribute("id", "arrow");
-arrow.setAttribute("class","row fas fa-arrow-alt-circle-up fa-3x arrow float-right col-2");
+arrow.setAttribute("class","rarrow ow fas fa-arrow-alt-circle-up fa-3x arrow float-right col-2");
 let connect = document.getElementById("footerfin");
 connect.appendChild(arrow);
+
+function scrollWin() {
+  $("html,body").animate({scrollTop: 0},"slow");
+}
+
+
+//https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/MaBi12Obb-RvtCg/arrow2.png//
+
 
 jQuery(function(){
   $(function () {
@@ -35,4 +24,5 @@ jQuery(function(){
   });
   });
   });
+
 
