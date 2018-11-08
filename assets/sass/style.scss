@@ -7,37 +7,49 @@ $colorWhite : #fff;
 // font
 $fontMontserrat : 'Montserrat', sans-serif;
 
-html {
-    font-family: $fontMontserrat;
-}
-
-h1,h2,h3,h4,h5,h6,p,a, {
+// général
+h1,h2,h3,h4,h5,h6,p,a,li {
     font-family: $fontMontserrat;
 }
 
 .titleSection {
+    margin-left: 30px;
     padding-left: 10px;
     border-left: 5px solid $colorRed;
     line-height: 1.5em;
 }
+.titleSection:last-of-type {
+    margin-bottom: 20px;
+}
+
+html {
+    font-family: $fontMontserrat;
+}
 
 body {
     margin: 0 auto;
-    max-width: 800px;
-}
-.wrapper {
-    width: 600px;
+    max-width: 850px;
 }
 
-.connectBar {
-    widows: 100%;
-    height: 40px;
-    background: $colorRed;
-    margin-bottom: 10px;
+// modal Top site
+.modal {
+    .description {
+        padding: 20px 5px 0px 5px;
+    }
+    .infos {
+        border-top: $colorRed 2px solid;
+        padding: 5px;
+        ul {
+            li {
+                list-style: none;
+            }
+        }
+    }
+
 }
 
-// section New Movie
-.newsMovie, .featuredMovies {
+// section New Movie featuredMovies featuredSeries shopMovies - css global
+.newsMovie, .featuredMovies, .featuredSeries, .shopMovies {
     width: 100%;
     margin-bottom: 50px;
     overflow: hidden;
@@ -91,49 +103,8 @@ body {
             }
 }
 
-// section featured Movies
-// btn de catégorie
-.btn-select-cat {
-    // width: 605px;
-    margin-bottom: 20px;
-    padding: 3px;
-    font-family: $fontMontserrat;
-    .btn {
-        font-size: 0.6em;
-        width: 60px;
-        line-height: 1.7em;
-        padding: 5px;
-        background: $colorClear;
-        border-radius: 0;
-        color: $colorGrey;
-    }
-    .btn:last-of-type {
-        color: $colorClear;
-    }
-    .btn.active {
-        color: $colorWhite;
-        background: $colorRed;
-    }
-    .btn:hover {
-        color: $colorGrey;
-        background: $colorWhite;
-    }
-
-}
-
-// annulation btn focus effect
-.btn:focus, .btn.focus {
-	box-shadow: none;
-}
-
-.btn.more-movie {
-    background: $colorRed;
-    color: $colorWhite;
-    border-radius: 0px;
-    font-size: 0.8em;
-}
-
-.featuredMovies {
+// featuredMovies featuredSeries shopMovies - ajustement
+.featuredMovies, .featuredSeries, .shopMovies {
     padding: 0px;
 
     .movieContainer {
@@ -157,8 +128,79 @@ body {
 
 }
 
-/* modal */
+// section SHOP MOVIES - ajustement
+.shopMovies {
+    padding: 0px;
+    .movieContainer {
+        justify-content: start;
+        border: none;
+        padding: 0;
+        width: fit-content;
+        .affiche {
+            height: 180px;
+            width: 117px;     
+            padding: 0;
+            margin: 3px 3px 15px 3px;
+            .img {
+                width: 100%;
+                height: 100%;
+            }
+            .afficheFooter {
+                position: absolute;
+                bottom: 0px;
+                .title {
+                    font-weight: 700;
+                }
+                .genre {
+                    visibility: hidden;
+                }
+            }
 
-.none {
-    display: none;
+        }
+    }
+    .moviePlay {
+        max-width: 340px;
+        max-height: 350px;
+        background: black;
+        margin: 3px 0px;
+}
+}
+
+// button catégorie et more 
+.btn-select-cat {
+    // width: 605px;
+    margin-left: 138px;
+    margin-bottom: 20px;
+    padding: 3px;
+    font-family: $fontMontserrat;
+    .btn {
+        font-size: 0.6em;
+        width: 60px;
+        line-height: 1.7em;
+        padding: 5px;
+        background: $colorClear;
+        border-radius: 0;
+        color: $colorGrey;
+    }
+    .btn.active {
+        color: $colorWhite;
+        background: $colorRed;
+    }
+    .btn:hover {
+        color: $colorGrey;
+        background: $colorWhite;
+    }
+
+}
+
+.btn.more-movie {
+    background: $colorRed;
+    color: $colorWhite;
+    border-radius: 0px;
+    font-size: 0.8em;
+}
+
+// annulation btn focus effect bootstrap
+.btn:focus, .btn.focus {
+	box-shadow: none;
 }
