@@ -18,12 +18,12 @@ goOut.click( function () {
 });
 
 login.click( function () {
-    loginBox.css("display", "block");
+    loginBox.show();
 });
 
 register.click( function () {
     loginBox.hide();
-    registerBox.css("display", "block");
+    registerBox.show();
 })
 
 close.click( function () {
@@ -34,10 +34,11 @@ cancelBtn.click( function () {
     modal.hide();
 });
 
-if ()
-    $(document).click(function (Event) {
-        if (Event.target == loginBox) {
-            loginBox.hide();
-        }
-    });
+
+modal.click(function (e) {
+    if (e.target == this) {
+        if (modal.is(':visible'))
+        modal.hide();
+    }
+});
 
