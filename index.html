@@ -90,15 +90,15 @@
                     <p>Contact</p>
                 </a>
                 <form>
-                        <div class="form-group">
-                    <input class="form-control" name="search" placeholder="Search Here" autocomplete="off" autofocus="autofocus"
-                    type="text">
+                    <div class="form-group">
+                        <input class="form-control" name="search" placeholder="Search Here" autocomplete="off"
+                            autofocus="autofocus" type="text">
                         <button>
                             <i class="fas fa-search"></i>
-                        </button> 
+                        </button>
                     </div>
                 </form>
-                
+
             </div>
         </div>
     </nav>
@@ -162,7 +162,7 @@
             </div>
         </div>
     </header>
-    
+
     <main>
         <!-- <div class="connectBar"></div> -->
         <section class="newsMovie">
@@ -228,7 +228,7 @@
                 <button class="btn comedies" onclick="selectCat('comedie')">Comédies</button>
             </div>
             <div class="movieContainer col-sm-10 col-10 row">
-    
+
                 <script>
                     for (let i = 0; i < 12; i++) {
                         document.write(afficheMaker(array[i]))
@@ -277,6 +277,55 @@
     </main>
 
 
+    <!-- Contact US -->
+    <div class="contactDIV">
+        <div class="contactTitle">
+            <h3 class="H3ContactTitle d-flex align-items-center">CONTACT US</h3>
+        </div>
+        <div class="ButtonDiv d-flex justify-content-center">
+            <button id="ButtonMessage">Click to Contact us</button>
+        </div>
+        <div class="container-fluid" id="formulaire">
+            <div class="row d-flex justify-content-center align-items-center" id="FormuSubDIV">
+                <div class="col-lg-12">
+                    <form class="FormuContactUS col-lg-12" id="FormuContactUS">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-6 col-12 formu-3info">
+                                <label for="FirstName"></label>
+                                <input required="required" class="input-formu" id="FirstName" value="" type="text"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="col-lg-6 col-12 formu-3info">
+                                <label for="LastName"></label>
+                                <input required="required" class="input-formu" id="LastName" value="" type="text"
+                                    placeholder="Last Name">
+                            </div>
+                            <div class="col-lg-6 col-12 formu-3info">
+                                <label for="email"></label>
+                                <input required="required" class="input-formu" id="email" value="" type="email"
+                                    placeholder="Email">
+                            </div>
+                            <div class="col-lg-6 col-12 formu-3info">
+                                <label for="Subject"></label>
+                                <input required="required" class="input-formu" id="Subject" value="" type="text"
+                                    placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Message"></label>
+                            <textarea required="required" id="Message" class="form-control" value="" rows="4"
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="btnContactUS" id="buttonSendContactUS" type="submit">
+                            <i class="fas fa-share-square"></i>SEND MESSAGE
+                        </button>
+                        <button class="btnCancelMessage" id="CancelMessage">CANCEL</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Popper JS -->
@@ -286,6 +335,7 @@
     <!--JS-->
     <script src="assets/js/smooth.js"></script>
     <script src="assets/js/myjs.js"></script>
+    <script src="assets/js/contactUS.js"></script>
 </body>
 
 </html>

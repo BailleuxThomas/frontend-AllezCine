@@ -225,6 +225,9 @@ body .jumbotron div .carousel-caption a {
 body .jumbotron div .carousel-caption a:hover {
   text-decoration: none;
 }
+body .jumbotron div .carousel-caption .input-formu {
+  width: 100%;
+}
 body .modal .description {
   padding: 20px 5px 0px 5px;
 }
@@ -413,6 +416,46 @@ body .btn.more-movie {
 body .btn:focus,
 body .btn.focus {
   box-shadow: none;
+}
+body .contactDIV {
+  width: 100%;
+  height: 75vh;
+}
+body .contactDIV .contactTitle {
+  height: 15%;
+}
+body .contactDIV .contactTitle .H3ContactTitle {
+  border-left: 5px #e9383f solid;
+  width: 25%;
+  height: 100%;
+  margin-left: 7%;
+  padding-left: 1%;
+  font-weight: bold;
+  font-size: 5vh;
+}
+body .contactDIV #ButtonMessage {
+  margin: 1% 0;
+  background-color: #e9383f;
+  color: white;
+  width: 20%;
+}
+body .contactDIV #formulaire {
+  width: 80%;
+  color: black;
+  background-color: white;
+  height: fit-content;
+  display: none;
+}
+body .contactDIV #formulaire #FormuSubDIV #FormuContactUS {
+  height: fit-content;
+}
+body .contactDIV #formulaire #FormuSubDIV #FormuContactUS .btnContactUS {
+  background-color: #e9383f;
+  color: white;
+}
+body .contactDIV #formulaire #FormuSubDIV #FormuContactUS .btnCancelMessage {
+  background-color: #e9383f;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -282,8 +282,11 @@ body {
                         text-decoration: none;
                     }
                 }
+                .input-formu {
+                    width: 100%;
+                }
             }
-        }
+        }       
     }
 
     // modal Top site
@@ -489,4 +492,50 @@ body {
         box-shadow: none;
     }
 
+    //Section Contact-US
+    .contactDIV{
+        //border: 3px solid green;
+        width: 100%;
+        height: 75vh;
+        .contactTitle{
+            height: 15%;
+            .H3ContactTitle{
+                border-left: 5px $grenat solid;
+                width: 25%;//gère la largeur de la box contenant le titre
+                height: 100%;//la box du titre prend x % de la hauteur dispo
+                margin-left: 07%;//créer un écart par rapport au bord 
+                padding-left: 01%;//créer un écart entre la bordeur et 
+                font-weight: bold;
+                font-size: 5vh;
+            }
+        }
+        #ButtonMessage{
+            margin: 1% 0;
+            background-color: #e9383f;
+            color: white;
+            width: 20%;
+        }
+        #formulaire {
+            width: 80%;
+            //border: 2.5px solid black;
+            color: black;
+            background-color: white;
+            height: fit-content;
+            display: none;
+            #FormuSubDIV{
+                #FormuContactUS{
+                    height: fit-content;
+                    //border: 3px solid red;
+                    .btnContactUS{
+                        background-color: #e9383f;
+                        color: white;
+                    }
+                    .btnCancelMessage{
+                        background-color: #e9383f;
+                        color: white; 
+                    }
+                }
+            }
+        }
+    }
 }
