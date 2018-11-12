@@ -1,139 +1,177 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
+body nav i {
+  margin-left: 13px;
+  color: red;
+}
 body .navbar {
   color: white !important;
   margin-top: 1vh;
   background-color: rgba(0, 0, 0, 0) !important;
 }
-
 @media (max-width: 992px) {
   body .navbar #navbarToggler {
     background-color: black !important;
   }
 }
-
 body .navbar .navbar-brand {
   font-size: 5vh;
   margin-left: 4vh;
   margin-right: 0vh;
   font-weight: bolder;
 }
-
 body .navbar .navbis {
   width: 80%;
 }
-
 body .navbar .navbis li {
   list-style: none;
 }
-
 body .navbar a {
   color: white;
   padding: 0%;
   margin: 0%;
 }
-
 body .navbar a.home {
   color: #e9383f;
 }
-
 body .navbar ul {
   padding: 0% 0vh;
   margin: 0%;
 }
-
 body .navbar ul li {
   background-color: rgba(150, 150, 150, 0.5);
   margin-right: 0.5vh;
 }
-
 body .navbar ul li:hover {
   background-color: #e9383f;
 }
-
 body .navbar a.dropdown-item {
   color: black !important;
 }
-
 body .navbar p {
   margin: 0%;
 }
-
 body .navbar .searchNav {
   padding: 0 0 0 0;
   margin: 0 0 5vh 0;
 }
-
 body .navbar .searchNav input {
   margin: 0%;
   padding: 0 0 0 0;
   border-radius: 15vh;
 }
-
+body ul.menuleft {
+  margin: 0vh;
+  padding: 0vh;
+  width: 25vh;
+  list-style-type: none;
+  position: fixed;
+  top: 8rem;
+  z-index: 500;
+}
+body ul.menuleft a {
+  color: white;
+}
+body ul.menuleft a:hover {
+  color: YELLOW;
+  text-decoration: none;
+}
+body ul.menuleft li {
+  position: relative;
+  text-align: center;
+  right: 18vh;
+  transform: translateX(0%);
+  transition: all 0.6s ease;
+}
+body ul.menuleft li:hover {
+  right: 5vh;
+}
+body ul.menuleft i.fab {
+  width: 4vh;
+  position: absolute;
+  right: 1vh;
+  background: white;
+  border-radius: 50%;
+  line-height: inherit;
+  color: black;
+}
+body ul.menuleft li.twitter {
+  border: 3px solid #00acee;
+  border-left: none;
+  border-radius: 3vh;
+  background: #00acee;
+}
+body ul.menuleft li.facebook {
+  border: 3px solid #3b5998;
+  border-left: none;
+  border-radius: 3vh;
+  background: #3b5998;
+}
+body ul.menuleft li.insta {
+  border: 3px solid #3f729b;
+  border-left: none;
+  border-radius: 3vh;
+  background: #3f729b;
+}
+body ul.menuleft li.google {
+  border: 3px solid #db3236;
+  border-left: none;
+  border-radius: 3vh;
+  background: #db3236;
+}
 body .jumbotron {
   width: 100%;
   height: 70vh;
   background-color: lightgreen !important;
   padding: 0% !important;
 }
-
 body .jumbotron div {
   width: 100%;
   height: 70vh;
 }
-
 body .jumbotron div ul li {
   margin-bottom: 10vh;
   background-color: white;
 }
-
 @media (max-width: 992px) {
   body .jumbotron div ul li {
     margin: 1vh;
   }
 }
-
 body .jumbotron div ul li.active {
   background-color: #e9383f !important;
 }
-
 body .jumbotron div h2 {
   font-size: 8vh;
 }
-
 body .jumbotron div p {
   margin: 3vh 0 3vh 0;
   font-size: 2vh;
   color: rgba(255, 255, 255, 0.7);
 }
-
 body .jumbotron div img {
   width: 100%;
   height: 100%;
 }
-
 body .jumbotron div .carousel-caption {
   width: auto;
   height: auto;
   margin: 18vh;
   padding: 0% !important;
 }
-
 @media (max-width: 992px) {
   body .jumbotron div .carousel-caption {
     margin: 9vh;
   }
 }
-
 body .jumbotron div .carousel-caption a {
   color: white;
   background-color: #e9383f;
   padding: 1vh 2vh;
 }
-
 body .jumbotron div .carousel-caption a:hover {
   text-decoration: none;
 }
+
 /*# sourceMappingURL=style.css.map */

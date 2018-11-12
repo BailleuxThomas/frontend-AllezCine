@@ -8,7 +8,7 @@ $google: #db3236;
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background: $background;
+    //background: $background;
     //navbar
     nav {
         i{
@@ -78,11 +78,14 @@ body{
         }
     }
     // Menu Res Sociaux
-    ul{ 
+    ul.menuleft{ 
         margin: 0vh;
         padding: 0vh;
         width: 25vh;
         list-style-type: none;
+        position: fixed;
+        top: 8rem;
+        z-index: 500;
         a {
             color: white;
         }
