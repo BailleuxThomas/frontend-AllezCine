@@ -1,9 +1,21 @@
 //variable
-$grena: #e9383f;
+$grenat: #e9383f;
+$background: #e3f2fd;
+$twitter: #00acee;
+$facebook: #3b5998;
+$insta: #3f729b;
+$google: #db3236;
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background: $background;
     //navbar
+    nav {
+        i{
+            margin-left: 13px; //pas fini//
+        color: red;
+        }
+    }
     .navbar{
         color: white!important;
         margin-top: 1vh;
@@ -33,7 +45,7 @@ body{
             margin: 0%;
         }
         a.home{
-            color: $grena;
+            color: $grenat;
         }
         //menu déroulant
         ul{
@@ -43,7 +55,7 @@ body{
                 background-color: rgba(150, 150, 150, 0.5);
                 margin-right: 0.5vh;
                 &:hover{
-                    background-color: rgba($color: $grena, $alpha: 1.0);
+                    background-color: rgba($color: $grenat, $alpha: 1.0);
                 }
             }
         }
@@ -65,6 +77,64 @@ body{
             }
         }
     }
+    // Menu Res Sociaux
+    ul{ 
+        margin: 0vh;
+        padding: 0vh;
+        width: 25vh;
+        list-style-type: none;
+        a {
+            color: white;
+        }
+        a:hover{
+            color: YELLOW;
+            text-decoration: none;
+        }
+        li {
+            position: relative;
+            text-align: center;
+            right: 18vh;
+            transform: translateX(0%);
+            transition: all 0.6s ease;
+        }
+        li:hover{
+            right: 5vh;
+        }
+        i.fab{
+            width: 4vh;
+            position: absolute;
+            right: 1vh;
+            background: white;
+            border-radius: 50%;
+            line-height: inherit;
+            color: black;
+            }
+        li.twitter {
+            border: 3px solid $twitter;
+            border-left: none;
+            border-radius: 3vh;
+            background: $twitter;
+        }
+        li.facebook {
+            border: 3px solid $facebook;
+            border-left: none;
+            border-radius: 3vh;
+            background: $facebook;
+        }
+        li.insta {
+            border: 3px solid $insta;
+            border-left: none;
+            border-radius: 3vh;
+            background: $insta;
+        }
+        li.google {
+            border: 3px solid $google;
+            border-left: none;
+            border-radius: 3vh;
+            background: $google;
+        } 
+    }
+    // Jumbotron
     .jumbotron{
         width: 100%;
         height: 70vh;
@@ -80,7 +150,7 @@ body{
                     }
                 }
                 li.active{
-                    background-color: $grena!important;
+                    background-color: $grenat!important;
                 }
             }
             width: 100%;
@@ -108,7 +178,7 @@ body{
                 padding: 0%!important;
                 a{
                     color: white;
-                    background-color: $grena;
+                    background-color: $grenat;
                     padding: 1vh 2vh;
 
                     &:hover{
