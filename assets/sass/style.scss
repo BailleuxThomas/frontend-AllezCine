@@ -73,6 +73,10 @@ body {
                     color: $colorGrey;
                     position: relative;
                     margin-bottom: 30px;
+                    transition: all 0.3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
                     img {
                         width: 100%;
                     }
@@ -282,21 +286,3 @@ body {
 .btn:focus, .btn.focus {
 	box-shadow: none;
 }
-
-// .youtubeMovie iframe{
-//     transition: all 1s;
-// }
-// .infoMovie {
-//     transition: all 1s;
-// }
-
-// .moviePlay:hover .movie .youtubeMovie{
-//     opacity: 1;
-// }
-// .moviePlay:hover .movie .youtubeMovie iframe {
-//     transform: scale(1.3);
-// }
-// .moviePlay:hover .infoMovie {
-//     transform: translate(0px, 46px );
-//     transition: all 1s;
-// }

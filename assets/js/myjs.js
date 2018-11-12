@@ -138,8 +138,7 @@ function modalMaker() {
 			</div>
 		</div><!-- END div MODAL -->
 	`
-cible = document.querySelectorAll(".affiche")
-cible.addEventListener("click", alert('coco'))
+
 }
 
 // function pour afficher les films avec flèches suivant précédent
@@ -173,7 +172,3 @@ function beforeMovie() {
 		document.querySelector(".moviePlay>.infoMovie>ul>li>p.price").innerHTML = `${array[i].price}`
 	}
 }
-
-
-
-
