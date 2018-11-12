@@ -1,5 +1,37 @@
-body {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
   font-family: "Montserrat", sans-serif;
+}
+
+.titleSection {
+  margin-left: 30px;
+  padding-left: 10px;
+  border-left: 5px solid #FF4037;
+  line-height: 1.5em;
+}
+
+.titleSection:last-of-type {
+  margin-bottom: 20px;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+body {
+  background: #e3f2fd;
 }
 body nav i {
   margin-left: 13px;
@@ -172,6 +204,195 @@ body .jumbotron div .carousel-caption a {
 }
 body .jumbotron div .carousel-caption a:hover {
   text-decoration: none;
+}
+body .modal .description {
+  padding: 20px 5px 0px 5px;
+}
+body .modal .infos {
+  border-top: #FF4037 2px solid;
+  padding: 5px;
+}
+body .modal .infos ul li {
+  list-style: none;
+}
+body .newsMovie,
+body .featuredMovies,
+body .featuredSeries,
+body .shopMovies {
+  width: 100%;
+  margin-bottom: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body .newsMovie .movieContainer,
+body .featuredMovies .movieContainer,
+body .featuredSeries .movieContainer,
+body .shopMovies .movieContainer {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  padding: 10px;
+  height: fit-content;
+  border-radius: 5px;
+  border: 2px solid #F2F2F2;
+}
+body .newsMovie .movieContainer .affiche,
+body .featuredMovies .movieContainer .affiche,
+body .featuredSeries .movieContainer .affiche,
+body .shopMovies .movieContainer .affiche {
+  height: 200px;
+  width: 105px;
+  padding: 0;
+  margin: 5px;
+  color: #4B5155;
+  overflow: hidden;
+  position: relative;
+}
+body .newsMovie .movieContainer .affiche img,
+body .featuredMovies .movieContainer .affiche img,
+body .featuredSeries .movieContainer .affiche img,
+body .shopMovies .movieContainer .affiche img {
+  width: 100%;
+  height: 77%;
+}
+body .newsMovie .movieContainer .affiche .afficheFooter,
+body .featuredMovies .movieContainer .affiche .afficheFooter,
+body .featuredSeries .movieContainer .affiche .afficheFooter,
+body .shopMovies .movieContainer .affiche .afficheFooter {
+  background: white;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+body .newsMovie .movieContainer .affiche .afficheFooter .title,
+body .featuredMovies .movieContainer .affiche .afficheFooter .title,
+body .featuredSeries .movieContainer .affiche .afficheFooter .title,
+body .shopMovies .movieContainer .affiche .afficheFooter .title {
+  font-size: 0.7em;
+  margin-bottom: 0;
+  text-align: center;
+}
+body .newsMovie .movieContainer .affiche .afficheFooter .date,
+body .newsMovie .movieContainer .affiche .afficheFooter .genre,
+body .featuredMovies .movieContainer .affiche .afficheFooter .date,
+body .featuredMovies .movieContainer .affiche .afficheFooter .genre,
+body .featuredSeries .movieContainer .affiche .afficheFooter .date,
+body .featuredSeries .movieContainer .affiche .afficheFooter .genre,
+body .shopMovies .movieContainer .affiche .afficheFooter .date,
+body .shopMovies .movieContainer .affiche .afficheFooter .genre {
+  font-size: 0.6em;
+  text-align: left;
+  width: 45%;
+  display: inline-block;
+  margin: 0;
+}
+body .newsMovie .movieContainer .affiche .afficheFooter .genre,
+body .featuredMovies .movieContainer .affiche .afficheFooter .genre,
+body .featuredSeries .movieContainer .affiche .afficheFooter .genre,
+body .shopMovies .movieContainer .affiche .afficheFooter .genre {
+  text-align: right;
+  font-weight: 700;
+}
+body .featuredMovies,
+body .featuredSeries,
+body .shopMovies {
+  padding: 0px;
+}
+body .featuredMovies .movieContainer,
+body .featuredSeries .movieContainer,
+body .shopMovies .movieContainer {
+  justify-content: start;
+  border: none;
+  padding: 0;
+  width: fit-content;
+}
+body .featuredMovies .movieContainer .affiche,
+body .featuredSeries .movieContainer .affiche,
+body .shopMovies .movieContainer .affiche {
+  height: 200px;
+  width: 105px;
+  padding: 0;
+  margin: 3px 3px 15px 3px;
+}
+body .featuredMovies .title,
+body .featuredSeries .title,
+body .shopMovies .title {
+  font-weight: 700;
+}
+body .featuredMovies .genre,
+body .featuredSeries .genre,
+body .shopMovies .genre {
+  visibility: hidden;
+}
+body .shopMovies {
+  padding: 0px;
+}
+body .shopMovies .movieContainer {
+  justify-content: start;
+  border: none;
+  padding: 0;
+  width: fit-content;
+}
+body .shopMovies .movieContainer .affiche {
+  height: 180px;
+  width: 117px;
+  padding: 0;
+  margin: 3px 3px 15px 3px;
+}
+body .shopMovies .movieContainer .affiche .img {
+  width: 100%;
+  height: 100%;
+}
+body .shopMovies .movieContainer .affiche .afficheFooter {
+  position: absolute;
+  bottom: 0px;
+}
+body .shopMovies .movieContainer .affiche .afficheFooter .title {
+  font-weight: 700;
+}
+body .shopMovies .movieContainer .affiche .afficheFooter .genre {
+  visibility: hidden;
+}
+body .shopMovies .moviePlay {
+  max-width: 340px;
+  max-height: 350px;
+  background: black;
+  margin: 3px 0px;
+}
+body .btn-select-cat {
+  margin-left: 138px;
+  margin-bottom: 20px;
+  padding: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+body .btn-select-cat .btn {
+  font-size: 0.6em;
+  width: 60px;
+  line-height: 1.7em;
+  padding: 5px;
+  background: #F2F0F1;
+  border-radius: 0;
+  color: #4B5155;
+}
+body .btn-select-cat .btn.active {
+  color: #fff;
+  background: #FF4037;
+}
+body .btn-select-cat .btn:hover {
+  color: #4B5155;
+  background: #fff;
+}
+body .btn.more-movie {
+  background: #FF4037;
+  color: #fff;
+  border-radius: 0px;
+  font-size: 0.8em;
+}
+body .btn:focus,
+body .btn.focus {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */

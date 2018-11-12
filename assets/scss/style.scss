@@ -5,80 +5,134 @@ $twitter: #00acee;
 $facebook: #3b5998;
 $insta: #3f729b;
 $google: #db3236;
+$colorRed : #FF4037;
+$colorGrey : #4B5155;
+$colorClear : #F2F0F1;
+$colorWhite : #fff;
+// font
+$fontMontserrat : 'Montserrat',
+sans-serif;
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    //background: $background;
+// général
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+    font-family: $fontMontserrat;
+}
+
+.titleSection {
+    margin-left: 30px;
+    padding-left: 10px;
+    border-left: 5px solid $colorRed;
+    line-height: 1.5em;
+}
+
+.titleSection:last-of-type {
+    margin-bottom: 20px;
+}
+
+html {
+    font-family: $fontMontserrat;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+body {
+    background: $background;
+
     //navbar
     nav {
-        i{
+        i {
             margin-left: 13px; //pas fini//
-        color: red;
+            color: red;
         }
     }
-    .navbar{
-        color: white!important;
+
+    .navbar {
+        color: white !important;
         margin-top: 1vh;
-        background-color: rgba($color: #000000, $alpha: 0.0)!important;
-        #navbarToggler{
-            @media (max-width: 992px){
-                background-color: rgba($color: #000000, $alpha: 1.0)!important;
-                }
+        background-color: rgba($color: #000000, $alpha: 0.0) !important;
+
+        #navbarToggler {
+            @media (max-width: 992px) {
+                background-color: rgba($color: #000000, $alpha: 1.0) !important;
+            }
         }
+
         //titre de la navbar (allezcine ici)
-        .navbar-brand{
+        .navbar-brand {
             font-size: 5vh;
             margin-left: 4vh;
             margin-right: 0vh;
             font-weight: bolder;
         }
-        .navbis{
-            width: 80%; 
-            li{
+
+        .navbis {
+            width: 80%;
+
+            li {
                 list-style: none;
-            }   
+            }
         }
 
-        a{
-            color:white;
+        a {
+            color: white;
             padding: 0%;
             margin: 0%;
         }
-        a.home{
+
+        a.home {
             color: $grenat;
         }
+
         //menu déroulant
-        ul{
+        ul {
             padding: 0% 0vh;
             margin: 0%;
-            li{
+
+            li {
                 background-color: rgba(150, 150, 150, 0.5);
                 margin-right: 0.5vh;
-                &:hover{
+
+                &:hover {
                     background-color: rgba($color: $grenat, $alpha: 1.0);
                 }
             }
         }
+
         //stylise les dropdown links 
-        a.dropdown-item{
-            color: black!important;
+        a.dropdown-item {
+            color: black !important;
         }
-        p{
+
+        p {
             margin: 0%;
         }
+
         //search bar 
-        .searchNav{
+        .searchNav {
             padding: 0 0 0 0;
             margin: 0 0 5vh 0;
-            input{
+
+            input {
                 margin: 0%;
                 padding: 0 0 0 0;
                 border-radius: 15vh;
             }
         }
     }
+
     // Menu Res Sociaux
-    ul.menuleft{ 
+    ul.menuleft {
         margin: 0vh;
         padding: 0vh;
         width: 25vh;
@@ -86,13 +140,16 @@ body{
         position: fixed;
         top: 8rem;
         z-index: 500;
+
         a {
             color: white;
         }
-        a:hover{
+
+        a:hover {
             color: YELLOW;
             text-decoration: none;
         }
+
         li {
             position: relative;
             text-align: center;
@@ -100,10 +157,12 @@ body{
             transform: translateX(0%);
             transition: all 0.6s ease;
         }
-        li:hover{
+
+        li:hover {
             right: 5vh;
         }
-        i.fab{
+
+        i.fab {
             width: 4vh;
             position: absolute;
             right: 1vh;
@@ -111,84 +170,304 @@ body{
             border-radius: 50%;
             line-height: inherit;
             color: black;
-            }
+        }
+
         li.twitter {
             border: 3px solid $twitter;
             border-left: none;
             border-radius: 3vh;
             background: $twitter;
         }
+
         li.facebook {
             border: 3px solid $facebook;
             border-left: none;
             border-radius: 3vh;
             background: $facebook;
         }
+
         li.insta {
             border: 3px solid $insta;
             border-left: none;
             border-radius: 3vh;
             background: $insta;
         }
+
         li.google {
             border: 3px solid $google;
             border-left: none;
             border-radius: 3vh;
             background: $google;
-        } 
+        }
     }
+
     // Jumbotron
-    .jumbotron{
+    .jumbotron {
         width: 100%;
         height: 70vh;
-        background-color: lightgreen!important;
-        padding: 0%!important;
-        div{
-            ul{
-                li{
-                margin-bottom: 10vh;
-                background-color: white;
-                @media (max-width: 992px){
-                    margin: 1vh;
+        background-color: lightgreen !important;
+        padding: 0% !important;
+
+        div {
+            ul {
+                li {
+                    margin-bottom: 10vh;
+                    background-color: white;
+
+                    @media (max-width: 992px) {
+                        margin: 1vh;
                     }
                 }
-                li.active{
-                    background-color: $grenat!important;
+
+                li.active {
+                    background-color: $grenat !important;
                 }
             }
+
             width: 100%;
             height: 70vh;
-            h2{
+
+            h2 {
                 font-size: 8vh;
             }
-            p{
+
+            p {
                 margin: 3vh 0 3vh 0;
                 font-size: 2vh;
                 color: rgba($color: white, $alpha: 0.7)
             }
-            img{
+
+            img {
                 width: 100%;
                 height: 100%;
                 //redimensionne l'image en fonction de la place disponible
             }
-            .carousel-caption{
+
+            .carousel-caption {
                 width: auto;
                 height: auto;
                 margin: 18vh;
-                @media (max-width: 992px){
+
+                @media (max-width: 992px) {
                     margin: 9vh;
                 }
-                padding: 0%!important;
-                a{
+
+                padding: 0% !important;
+
+                a {
                     color: white;
                     background-color: $grenat;
                     padding: 1vh 2vh;
 
-                    &:hover{
+                    &:hover {
                         text-decoration: none;
                     }
                 }
             }
         }
     }
+
+    // modal Top site
+    .modal {
+        .description {
+            padding: 20px 5px 0px 5px;
+        }
+
+        .infos {
+            border-top: $colorRed 2px solid;
+            padding: 5px;
+
+            ul {
+                li {
+                    list-style: none;
+                }
+            }
+        }
+
+    }
+
+    // section New Movie featuredMovies featuredSeries shopMovies - css global
+    .newsMovie,
+    .featuredMovies,
+    .featuredSeries,
+    .shopMovies {
+        width: 100%;
+        margin-bottom: 50px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .movieContainer {
+            display: flex;
+            justify-content: space-around;
+            color: black;
+            padding: 10px;
+            height: fit-content;
+            border-radius: 5px;
+            border: 2px solid #F2F2F2;
+
+            .affiche {
+                height: 200px;
+                width: 105px;
+                padding: 0;
+                margin: 5px;
+                color: $colorGrey;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 77%;
+                }
+
+                .afficheFooter {
+                    background: white;
+                    position: absolute;
+                    bottom: 0px;
+                    width: 100%;
+
+                    .title {
+                        font-size: 0.7em;
+                        margin-bottom: 0;
+                        text-align: center;
+                    }
+
+                    .date,
+                    .genre {
+                        font-size: 0.6em;
+                        text-align: left;
+                        width: 45%;
+                        display: inline-block;
+                        margin: 0;
+                    }
+
+                    .genre {
+                        text-align: right;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+        }
+    }
+
+    // featuredMovies featuredSeries shopMovies - ajustement
+    .featuredMovies,
+    .featuredSeries,
+    .shopMovies {
+        padding: 0px;
+
+        .movieContainer {
+            justify-content: start;
+            border: none;
+            padding: 0;
+            width: fit-content;
+
+            .affiche {
+                height: 200px;
+                width: 105px;
+                padding: 0;
+                margin: 3px 3px 15px 3px;
+            }
+        }
+
+        .title {
+            font-weight: 700;
+        }
+
+        .genre {
+            visibility: hidden;
+        }
+
+    }
+
+    // section SHOP MOVIES - ajustement
+    .shopMovies {
+        padding: 0px;
+
+        .movieContainer {
+            justify-content: start;
+            border: none;
+            padding: 0;
+            width: fit-content;
+
+            .affiche {
+                height: 180px;
+                width: 117px;
+                padding: 0;
+                margin: 3px 3px 15px 3px;
+
+                .img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .afficheFooter {
+                    position: absolute;
+                    bottom: 0px;
+
+                    .title {
+                        font-weight: 700;
+                    }
+
+                    .genre {
+                        visibility: hidden;
+                    }
+                }
+
+            }
+        }
+
+        .moviePlay {
+            max-width: 340px;
+            max-height: 350px;
+            background: black;
+            margin: 3px 0px;
+        }
+    }
+
+    // button catégorie et more 
+    .btn-select-cat {
+        // width: 605px;
+        margin-left: 138px;
+        margin-bottom: 20px;
+        padding: 3px;
+        font-family: $fontMontserrat;
+
+        .btn {
+            font-size: 0.6em;
+            width: 60px;
+            line-height: 1.7em;
+            padding: 5px;
+            background: $colorClear;
+            border-radius: 0;
+            color: $colorGrey;
+        }
+
+        .btn.active {
+            color: $colorWhite;
+            background: $colorRed;
+        }
+
+        .btn:hover {
+            color: $colorGrey;
+            background: $colorWhite;
+        }
+
+    }
+
+    .btn.more-movie {
+        background: $colorRed;
+        color: $colorWhite;
+        border-radius: 0px;
+        font-size: 0.8em;
+    }
+
+    // annulation btn focus effect bootstrap
+    .btn:focus,
+    .btn.focus {
+        box-shadow: none;
+    }
+
 }
