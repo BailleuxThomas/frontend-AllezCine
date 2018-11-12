@@ -13,6 +13,7 @@ body{
                 background-color: rgba($color: #000000, $alpha: 1.0)!important;
                 }
         }
+        
         //titre de la navbar (allezcine ici)
         .navbar-brand{
             font-size: 5vh;
@@ -24,9 +25,29 @@ body{
             width: 80%; 
             li{
                 list-style: none;
-            }   
+            } 
+            form{
+                position: relative;
+                input{
+                    border: none;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 25px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+                button {
+                border: none;
+                position: absolute;
+                color: white;
+                font-size: 1.5em;
+                top: 0;
+                right:-36px;
+                border-top-right-radius: 50%;
+                border-bottom-right-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.5);
+                
+            }
+        }  
         }
-
         a{
             color:white;
             padding: 0%;
