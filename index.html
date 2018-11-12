@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <title>Allezcine</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/scss/style.css">
+	<!-- à vérifier <link rel="stylesheet" href="assets/scss/style.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<!--  upside ever movies array --><script src="assets/js/myjs.js"></script>
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
     <!-- Age Check -->
     <div class="hideContent">
         <div id="ageCheckBox">
@@ -251,116 +249,128 @@
     </header>
 
     <main>
-        <!-- <div class="connectBar"></div> -->
-        <section class="newsMovie">
-            <div class="movieContainer col-sm-10 col-10 row">
-                <!-- Start TOP MOVIES -->
-                <script>
-                    for (let i = 0; i < 5; i++) {
-                        document.write(afficheMaker(array[i]))
-                    }
-                </script>
-            </div>
-        </section>
-        <!-- End TOP MOVIES -->
-        <!-- Start Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Batman</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <!-- CONTAIN -->
-                    <div class="modal-body">
-                        <section class="preview">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f64h6dc2rqM?controls=0;autoplay=1" allowfullscreen></iframe> -->
-                            </div>
-                            <div class="description">
-                                <p>Après la mort de son épouse lors d'une violente agression qui l'a laissé
-                                    paralysé, Grey Trace est
-                                    approché par un inventeur milliardaire qui propose de lui administrer un remède
-                                    expérimental qui va
-                                    "upgrader" son corps et ses facultés. Désormais doté d'un implant fonctionnant
-                                    à l'intelligence
-                                    artificielle, Grey voit ses capacités physiques décuplées et se lance dans une
-                                    mission vengeresse,
-                                    afin de faire payer ceux qui ont tué sa femme.</p>
-                            </div>
-                            <div class="infos">
-                                <ul>
-                                    <li class="realisateur">Réalisateur : Matt Reeves </li>
-                                    <li class="date">Date de sortie : Américain</li>
-                                    <li class="genre">Genre : Action, Fantastique</li>
-                                    <li class="acteurs">Acteurs : Joe Manganiello, J.K. Simmons, Jeremy Irons</li>
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- CONTAIN -->
-                </div>
-            </div>
-        </div>
-        <!-- end Modal -->
-        <!--- start FEATURED MOVIES  -->
-        <h3 class="titleSection">FEATURED MOVIES</h3>
-        <section class="featuredMovies">
-            <div class="btn-select-cat col-12">
-                <button class="btn all active" onclick="selectCat('all')">All</button>
-                <button class="btn actions" onclick="selectCat('action')">Actions</button>
-                <button class="btn comedies" onclick="selectCat('comedie')">Comédies</button>
-            </div>
-            <div class="movieContainer col-sm-10 col-10 row">
-
-                <script>
-                    for (let i = 0; i < 12; i++) {
-                        document.write(afficheMaker(array[i]))
-                    }
-                </script>
-            </div>
-            <div class="row col-12 justify-content-center"><button class="btn more-movie" onclick="affMore()">PLUS
-                    DE FILMS</button></div>
-        </section>
-        <!-- end FEATURED MOVIES -->
-        <!-- start Featured Series -->
-        <h3 class="titleSection">FEATURES SERIES TV "visuel"</h3>
-        <section class="featuredSeries">
-            <div class="btn-select-cat col-12">
-                <button class="btn all active">All</button>
-                <button class="btn actions">Actions</button>
-                <button class="btn policiers">Policiers</button>
-            </div>
-            <div class="movieContainer col-sm-10 col-10 row">
-                <script>
-                    for (let i = 0; i < 12; i++) {
-                        document.write(afficheMaker(array[i]))
-                    }
-                </script>
-            </div>
-            <div class="row col-12 justify-content-center"><button class="btn more-movie">PLUS DE SERIES</button></div>
-        </section>
-        <!-- end Featured Series -->
-        <!-- start Shop Movies -->
-        <h3 class="titleSection">SHOP MOVIES</h3>
-        <section class="shopMovies">
-            <div class="movieContainer col-sm-7 col-7 row">
-                <script>
-                    for (let i = 0; i < 8; i++) {
-                        document.write(afficheMaker(array[i]))
-                    }
-                </script>
-            </div>
-            <div class="moviePlay col-sm-5 col-5 row">
-                <div class="fleches"></div>
-                <div class="movieYoutube"></div>
-                <div class="infoMovie"></div>
-            </div>
-        </section>
-        <!-- end Shop Movies -->
+			<section class="newsMovie">
+					<div class="movieContainer col-sm-10 col-10 row">
+						<!-- Start TOP MOVIES -->
+						<script>
+							for (let i = 0; i < 5; i++) {
+								document.write(afficheMaker(array[i], "affiche col-md-2 col-5"))
+							}
+						</script>
+					</div>
+				</section>
+				<!-- End TOP MOVIES -->
+				<!-- Start Modal -->
+				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+				 aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">Batman</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<!-- CONTAIN -->
+							<div class="modal-body">
+								<section class="preview">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f64h6dc2rqM?controls=0;autoplay=1" allowfullscreen></iframe>
+									</div>
+									<div class="description">
+										<p>Après la mort de son épouse lors d'une violente agression qui l'a laissé paralysé, Grey Trace est
+											approché par un inventeur milliardaire qui propose de lui administrer un remède expérimental qui va
+											"upgrader" son corps et ses facultés. Désormais doté d'un implant fonctionnant à l'intelligence
+											artificielle, Grey voit ses capacités physiques décuplées et se lance dans une mission vengeresse,
+											afin de faire payer ceux qui ont tué sa femme.</p>
+									</div>
+									<div class="infos">
+										<ul>
+											<li class="realisateur">Réalisateur : Matt Reeves </li>
+											<li class="date">Date de sortie : Américain</li>
+											<li class="genre">Genre : Action, Fantastique</li>
+											<li class="acteurs">Acteurs : Joe Manganiello, J.K. Simmons, Jeremy Irons</li>
+										</ul>
+									</div>
+								</section>
+							</div>
+							<!-- CONTAIN -->
+						</div>
+					</div>
+				</div><!-- END div MODAL -->
+				<!-- end Modal -->
+				<!--- start FEATURED MOVIES  -->
+				<h3 class="titleSection">FEATURED MOVIES</h3>
+				<section class="featuredMovies">
+					<div class="btn-select-cat col-12">
+						<button class="btn all active" onclick="selectCat('all')">All</button>
+						<button class="btn actions" onclick="selectCat('action')">Actions</button>
+						<button class="btn comedies" onclick="selectCat('comedie')">Comédies</button>
+					</div>
+					<div class="movieContainer col-sm-10 col-10 row">
+		
+						<script>
+							for (let i = 0; i < 12; i++) {
+								document.write(afficheMaker(array[i], "affiche col-md-2 col-5"))
+							}
+						</script>
+					</div>
+					<div class="row col-12 justify-content-center"><button class="btn more-movie" onclick="affMore()">PLUS DE FILMS</button></div>
+				</section>
+				<!-- end FEATURED MOVIES -->
+				<!-- start Featured Series -->
+				<h3 class="titleSection">FEATURES SERIES TV "visuel"</h3>
+				<section class="featuredSeries">
+					<div class="btn-select-cat col-12">
+						<button class="btn all active">All</button>
+						<button class="btn actions">Actions</button>
+						<button class="btn policiers">Policiers</button>
+					</div>
+					<div class="movieContainer col-sm-10 col-10 row">
+						<script>
+							for (let i = 0; i < 12; i++) {
+								document.write(afficheMaker(array[i], "affiche col-md-2 col-5"))
+							}
+						</script>
+					</div>
+					<div class="row col-12 justify-content-center"><button class="btn more-movie">PLUS DE SERIES</button></div>
+				</section>
+				<!-- end Featured Series -->
+				<!-- start Shop Movies -->
+				<h3 class="titleSection">SHOP MOVIES</h3>
+				<section class="shopMovies">
+					<div class="movieContainer col-sm-7 col-7 row">
+						<script>
+							for (let i = 0; i < 8; i++) {
+								document.write(afficheMaker(array[i], "affiche col-md-3 col-5"))
+							}
+						</script>
+					</div>
+					<div class="moviePlay col-sm-5 col-5 row">
+						<div class="arrow"><i class="fas fa-arrow-circle-left" onclick="beforeMovie()"></i><i class="fas fa-arrow-circle-right" onclick="nextMovie()"></i></div>
+						<div class="movie">
+								<div class="embed-responsive embed-responsive-16by9 youtubeMovie">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f64h6dc2rqM?autoplay=1" allowfullscreen></iframe>
+								</div>
+							<!-- <figure><script>document.write(`<img src="img/${array[0].src}.jpg" alt="${array[0].alt}">`)</script></figure> -->
+						</div>
+						<div class="infoMovie">
+							<script>
+							document.write(
+							`
+							<ul>
+								<li class="title">${array[0].title}</li>
+								<li><p>Story : </p><p class="story">${array[0].story.slice(0, 100)}...</p></li>
+								<li><p>Release On : </p><p class="date">${array[0].date}</p></li>
+								<li><p>Genres : </p><p class="genre">${array[0].genre}</p></li>
+								<li><p>Price : </p><p class="price">${array[0].price} &euro;</p></li>
+							</ul>
+							`)
+						</script>
+						</div>
+					</div>
+				</section>
+				<!-- end Shop Movies -->
     </main>
 
 
@@ -540,7 +550,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <!--JS-->
     <script src="assets/js/smooth.js"></script>
-    <script src="assets/js/myjs.js"></script>
     <script src="assets/js/contactUS.js"></script>
     <script src="assets/js/arrow.js"></script>
     <script src="assets/js/ac.js"></script>
