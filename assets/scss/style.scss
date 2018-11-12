@@ -14,10 +14,13 @@ $footermovie: grey;
 $footerlatestmovies: grey;
 $backgroundfooter: black;
 // font
-$fontMontserrat : 'Montserrat',
-sans-serif;
+$fontMontserrat : 'Montserrat', sans-serif;
 
 // général
+* {
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -48,6 +51,71 @@ html {
 main {
     margin: 0 auto;
     max-width: 850px;
+}
+
+// age check
+.hideContent {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+
+    #ageCheckBox {
+        background: #fff;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        max-width: 90%;
+        max-height: 90%;
+        margin: 0 auto;
+        padding: 5rem;
+        text-align: center;
+        display: block;
+    }
+}
+
+// Cookie info popup
+.cookieInfo {
+    position: fixed;
+    bottom: 0.2rem;
+    max-width: 80%;
+    max-height: 80%;
+    z-index: 9998;
+    background: #4d686e;
+    border: 2px solid #000000;
+    color: white;
+    -webkit-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.6);
+    -ms-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.6);
+    -o-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.6);
+
+    @media screen and (min-width: 980px) {
+        .cookieInfo {
+            position: fixed;
+            bottom: 1rem;
+            left: 1rem;
+            max-width: 25%;
+            max-height: 40%;
+            overflow: auto;
+        }
+    }
+
+    .cookieBtns {
+        display: flex;
+        justify-content: space-between;
+
+        .cookieBtn {
+            width: 30%;
+        }
+    }
 }
 
 body {
@@ -235,6 +303,7 @@ body {
         height: 70vh;
         background-color: lightgreen !important;
         padding: 0% !important;
+        margin: 0 !important;
 
         div {
             ul {
@@ -297,6 +366,11 @@ body {
                 }
             }
         }
+    }
+
+    // Account bar
+    .accountbar {
+        background: $grenat;
     }
 
     // modal Top site

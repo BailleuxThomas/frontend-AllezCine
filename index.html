@@ -15,6 +15,27 @@
 
 <body>
 
+    <!-- Age Check -->
+    <div class="hideContent">
+        <div id="ageCheckBox">
+            <p>Pour accéder à ce site, vous devez être majeur.</p>
+            <p>Veuillez cliquer sur sortir si vous avez moins de 18 ans.</p>
+            <button id="goIn">Entrer</button>
+            <button id="goOut">Sortir</button>
+        </div>
+    </div>
+
+    <!-- Cookie info popup -->
+    <div class="cookieInfo">
+        <h3>Miam ou pas miam, les cookies ?</h3>
+        <p>Ce site utilise des cookies pour améliorer votre expérience utilisateur et a des fins statistiques. En
+            utilisant ce site, vous acceptez tous les cookies conformément à notre <a href="#">Politique de Cookies</a></p>
+        <div class="cookieBtns">
+            <button type="button" class="cookieBtn">Accepter</button>
+            <button type="button" class="cookieBtn">Refuser</button>
+        </div>
+    </div>
+
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
@@ -158,6 +179,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid accountbar">
+                <span>0123/45.67.89</span>
+                <button type="button" class="login">Login</button>
+                <button type="button" class="register">Register</button>
             </div>
         </div>
     </header>
@@ -455,6 +483,7 @@
     <script src="assets/js/myjs.js"></script>
     <script src="assets/js/contactUS.js"></script>
     <script src="assets/js/arrow.js"></script>
+    <script src="assets/js/ac.js"></script>
 </body>
 
 </html>
