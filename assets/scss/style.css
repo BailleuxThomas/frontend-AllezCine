@@ -93,6 +93,106 @@ main {
   width: 30%;
 }
 
+.accountform {
+  border: 3px solid #f1f1f1;
+}
+.accountform input[type=text],
+.accountform input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.accountform button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.accountform button:hover {
+  opacity: 0.8;
+}
+.accountform .cancelBtn,
+.accountform #goOut {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.accountform .container {
+  padding: 16px;
+}
+.accountform span.psw {
+  float: right;
+  padding-top: 16px;
+}
+@media screen and (max-width: 300px) {
+  .accountform span.psw {
+    display: block;
+    float: none;
+  }
+}
+.accountform .modal {
+  display: none;
+  position: fixed;
+  z-index: 500;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+.accountform .modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+.accountform .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.accountform .close:hover,
+.accountform .close:focus {
+  color: red;
+  cursor: pointer;
+}
+.accountform .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.accountform hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
 body {
   background: #e3f2fd;
 }

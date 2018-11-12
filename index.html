@@ -31,12 +31,72 @@
         <p>Ce site utilise des cookies pour améliorer votre expérience utilisateur et a des fins statistiques. En
             utilisant ce site, vous acceptez tous les cookies conformément à notre <a href="#">Politique de Cookies</a></p>
         <div class="cookieBtns">
-            <button type="button" class="cookieBtn">Accepter</button>
-            <button type="button" class="cookieBtn">Refuser</button>
+            <button type="button" class="cookieBtn" id="acceptCookies">Accepter</button>
+            <button type="button" class="cookieBtn" id="refuseCookies">Refuser</button>
         </div>
     </div>
 
-    <!-- NavBar -->
+    <!-- Login modal-->
+    <div id="loginBox" class="modal">
+        <span class="close" title="Close Modal">&timesb;</span>
+
+        <form action="login" class="modal-content animate accountform">
+            <div class="container">
+                <label for="uname"><b>Nom d'utilisateur</b></label>
+                <input type="text" placeholder="Nom d'utilisateur" name="uname" required>
+
+                <label for="psw"><b>Mot de passe</b></label>
+                <input type="password" placeholder="Mot de passe" name="psw" required>
+
+                <button type="submit">Ok</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+                </label>
+
+                <button type="button" class="register">Créer un compte</button>
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelBtn">Annuler</button>
+                <span class="psw"><a href="#">Mot de passe oublié</a></span>
+            </div>
+        </form>
+    </div>
+
+    <!-- Register modal -->
+    <div id="registerBox" class="modal">
+        <span class="close" title="Close Modal">&timesb;</span>
+
+        <form action="register" class="modal-content animate accountform">
+            <div class="container">
+                <h2>Créez un compte</h2>
+                <p>Remplissez ce formulaire pour créer votre compte.</p>
+                <hr>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Entrer Email" name="email" required>
+
+                <label for="psw-register"><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer mot de passe" name="psw-register" required>
+
+                <label for="psw-repeat"><b>Répéter mot de passe</b></label>
+                <input type="password" placeholder="Répéter mot de passe" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+                </label>
+
+                <p>En créant un compte, vous acceptez nos <a href="#">Conditions d'utilisation</a> et <a href="#">Politique
+                        de confidentialité</a></p>
+
+                <div>
+                    <button type="button" class="cancelBtn">Annuler</button>
+                    <button type="submit" class="signupBtn">S'inscrire</button>
+                </div>
+            </div>
+        </form>
+    </div <!-- NavBar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
             aria-expanded="false" aria-label="Toggle navigation">
