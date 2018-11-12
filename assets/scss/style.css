@@ -35,7 +35,7 @@ body {
 }
 body nav i {
   margin-left: 13px;
-  color: red;
+  /* color: red; */
 }
 body .navbar {
   color: white !important;
@@ -456,6 +456,143 @@ body .contactDIV #formulaire #FormuSubDIV #FormuContactUS .btnContactUS {
 body .contactDIV #formulaire #FormuSubDIV #FormuContactUS .btnCancelMessage {
   background-color: #e9383f;
   color: white;
+}
+
+footer {
+  padding: 0vh;
+  color: white;
+  background: black;
+}
+footer .footmarge {
+  margin-top: 4vh;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer a {
+  display: block;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  color: white;
+  justify-content: left;
+}
+footer .imagefooter {
+  padding: 0;
+  margin: 0;
+  width: 140%;
+}
+footer h2 {
+  color: #dc3545;
+  text-align: center;
+}
+footer ul.release li.footrelease a {
+  color: grey;
+  text-decoration: none;
+}
+footer ul.movies li.footmovies a {
+  color: grey;
+  text-decoration: none;
+}
+footer .Category a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 1vh;
+  height: auto;
+  background-color: grey;
+}
+footer ul.lastmovies li img {
+  color: grey;
+}
+footer h4 {
+  font-size: 2vh;
+}
+footer h4.video {
+  color: #dc3545;
+  font-size: 5vh;
+  text-align: left;
+}
+footer h4.video span {
+  color: white;
+}
+footer .divsub {
+  margin-bottom: 5vh;
+}
+footer li.footlogo {
+  margin-bottom: 1vh;
+}
+footer .footborder {
+  height: fit-content;
+  border-bottom: 0.1vh solid yellow;
+}
+
+.row .col-lg-12 .connectus {
+  font-size: 3vh;
+}
+
+#arrow {
+  padding: 0;
+  margin: 0;
+  width: inherit;
+  margin: 0;
+  font-size: 7vh;
+  border: 0.4vh solid red;
+  border-radius: 100%;
+  color: black;
+  background: white;
+  position: fixed;
+  bottom: 10px;
+  right: -110px;
+  opacity: 1;
+}
+#arrow .arrow:hover {
+  color: black;
+}
+
+.col-lg-12 .footerfin {
+  font-size: 2vh;
+}
+.col-lg-12 .footerfin a {
+  text-decoration: none;
+}
+.col-lg-12 .footerfin a:hover {
+  color: orangered;
+}
+.col-lg-12 .footerfin i {
+  margin-right: 1vh;
+  padding: 1vh;
+  border: 0.2vh solid grey;
+}
+
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .imagefooter {
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  footer .imagefooter2 {
+    padding: 0;
+    margin: 0;
+    width: 10vh;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .imagefooter2 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
