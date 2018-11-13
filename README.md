@@ -5,3 +5,6 @@ Ce repo contient le produit du travail d'une merveilleuse team :
 - Maxime Christiaens : ![Git-Hub](https://github.com/Maxime-Christiaens/)
 - Thomas Bailleux : ![Git-Hub](https://github.com/BailleuxThomas/)
 
+## But du travail 
+Nous devions reproduire un layout ainsi qu'une newsletter
+![Layout à reproduire](assets/imgs/layout.jpg)
