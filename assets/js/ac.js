@@ -9,34 +9,39 @@ let register = $(".register");
 let registerBox = $("#registerBox");
 let modal = $(".modal");
 let cookieInfo = $('.cookieInfo');
-let cookieBtn = $(".cookieBtn");
+let acceptCookies = $('#acceptCookies');
+let refuseCookies = $('#refuseCookies');
 
 goIn.click(function () {
     hideContent.hide();
 });
 
-goOut.click( function () {
+goOut.click(function () {
     window.location.href = 'https://www.imdb.com'
 });
 
-cookieBtn.click( function () {
+acceptCookies.click(function () {
     cookieInfo.hide();
-})
+});
 
-login.click( function () {
+refuseCookies.click(function () {
+    alert("Vous devez accepter les cookies pour continuer la navigation sur le site");
+});
+
+login.click(function () {
     loginBox.show();
 });
 
-register.click( function () {
+register.click(function () {
     loginBox.hide();
     registerBox.show();
 })
 
-close.click( function () {
+close.click(function () {
     modal.hide();
 });
 
-cancelBtn.click( function () {
+cancelBtn.click(function () {
     modal.hide();
 });
 
@@ -44,7 +49,7 @@ cancelBtn.click( function () {
 modal.click(function (e) {
     if (e.target == this) {
         if (modal.is(':visible'))
-        modal.hide();
+            modal.hide();
     }
 });
 

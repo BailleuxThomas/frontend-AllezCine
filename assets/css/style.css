@@ -221,20 +221,21 @@ body {
   background: #e3f2fd;
 }
 
-body nav i {
-  margin-left: 13px;
-  /* color: red; */
-}
-
 body .navbar {
   color: white !important;
   margin-top: 1vh;
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  body .navbar {
+    background-color: black;
+  }
+}
+
+@media (max-width: 991px) {
   body .navbar #navbarToggler {
-    background-color: black !important;
+    padding-left: 30px;
   }
 }
 
@@ -247,6 +248,12 @@ body .navbar .navbar-brand {
 
 body .navbar .navbis {
   width: 80%;
+}
+
+@media (max-width: 767px) {
+  body .navbar .navbis ul {
+    width: 50px;
+  }
 }
 
 body .navbar .navbis li {
@@ -270,7 +277,7 @@ body .navbar .navbis form button {
   color: white;
   font-size: 1.5em;
   top: 0;
-  right: -36px;
+  right: -21px;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -815,7 +822,8 @@ body #formulaire #FormuSubDIV .input-formu {
 }
 
 footer {
-  padding: 0vh;
+  padding: 0;
+  margin: 0;
   color: white;
   background: black;
 }
@@ -852,6 +860,8 @@ footer .imagefooter {
 }
 
 footer h2 {
+  padding: 0;
+  margin: 0;
   color: #dc3545;
   text-align: center;
 }
@@ -895,7 +905,8 @@ footer h4.video span {
 }
 
 footer .divsub {
-  margin-bottom: 5vh;
+  padding: 0;
+  margin: 0 0 5vh 0;
 }
 
 footer li.footlogo {
