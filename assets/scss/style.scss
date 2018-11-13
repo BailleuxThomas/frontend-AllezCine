@@ -22,6 +22,10 @@ sans-serif;
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -817,7 +821,6 @@ body {
         position: relative;
     }
 
-<<<<<<< HEAD
         #ButtonMessage {
             margin: 1% 0;
             background-color: #e9383f;
@@ -827,14 +830,6 @@ body {
                 width: 40%;
             }
         }
-=======
-    #ButtonMessage {
-        margin: 1% 0;
-        background-color: #e9383f;
-        color: white;
-        width: 20%;
-    }
->>>>>>> dev-mat
 
     #formulaire {
         width: 80%;
