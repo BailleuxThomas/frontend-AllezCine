@@ -8,10 +8,10 @@ Ce repo contient le produit du travail d'une merveilleuse team :
 ## But du travail 
 Nous devions reproduire un layout ainsi que créer une newsletter
 
-# Notre Layout 
+## Notre Layout 
 ![Pour le visiter]()
 
-# Notre Newsletter
+## Notre Newsletter
 ![Pour la visualiser](https://maxime-christiaens.github.io/frontend-AllezCine-Newsletter/)
 
 ## Le layout à reproduire
