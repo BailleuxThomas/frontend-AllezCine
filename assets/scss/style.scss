@@ -733,6 +733,8 @@ body {
     .btn.active {
         color: $colorWhite;
         background: $colorRed;
+        background-color: #666;
+        color: white;
     }
     .btn:hover {
         color: $colorGrey;

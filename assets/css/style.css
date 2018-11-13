@@ -203,7 +203,7 @@ body nav i {
 body .navbar {
   color: white !important;
   margin-top: 1vh;
-  background-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 @media (max-width: 992px) {
   body .navbar #navbarToggler {
@@ -607,6 +607,8 @@ body .btn-select-cat .btn {
 body .btn-select-cat .btn.active {
   color: #fff;
   background: #FF4037;
+  background-color: #666;
+  color: white;
 }
 body .btn-select-cat .btn:hover {
   color: #4B5155;
@@ -788,3 +790,5 @@ footer .footborder {
     display: none;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
