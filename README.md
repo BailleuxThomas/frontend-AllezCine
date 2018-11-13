@@ -6,13 +6,13 @@ Ce repo contient le produit du travail d'une merveilleuse team :
 - Thomas Bailleux : ![Git-Hub](https://github.com/BailleuxThomas/)
 
 ## But du travail 
-Nous devions reproduire un layout ainsi qu'une newsletter
+Nous devions reproduire un layout ainsi que créer une newsletter
 
-#Notre Layout 
+# Notre Layout 
+![Pour le visiter]()
 
+# Notre Newsletter
+![Pour la visualiser](https://maxime-christiaens.github.io/frontend-AllezCine-Newsletter/)
 
-#Notre Newsletter
-![Newsletter](Newsletter.html)
-
-##Le layout à reproduire
+## Le layout à reproduire
 ![Layout à reproduire](assets/imgs/layout.jpg)
