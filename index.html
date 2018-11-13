@@ -304,9 +304,9 @@
 				<h3 class="titleSection">FEATURED MOVIES</h3>
 				<section class="featuredMovies">
 					<div class="btn-select-cat col-12">
-						<button class="btn all active" onclick="selectCat('all')">All</button>
-						<button class="btn actions" onclick="selectCat('action')">Actions</button>
-						<button class="btn comedies" onclick="selectCat('comedie')">Comédies</button>
+						<button id="all-film" class="btn-film btn all active" onclick="selectCat('all')">All</button>
+						<button id="action-film" class="btn-film btn actions" onclick="selectCat('action')">Actions</button>
+						<button id="comeds-film" class="btn-film btn comedies" onclick="selectCat('comedie')">Comédies</button>
 					</div>
 					<div class="movieContainer col-sm-10 col-10 row">
 		
@@ -550,6 +550,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <!--JS-->
+    <script src="assets/js/active.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/smooth.js"></script>
     <script src="assets/js/contactUS.js"></script>
