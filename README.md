@@ -1,8 +1,18 @@
 # frontend-AllezCine
-Site one-page de location et vente de film avec newsletter
+Ce repo contient le produit du travail d'une merveilleuse team :
+- David Bouzouita : [Git-Hub](https://github.com/bouzouitadavid)
+- Mathieu Debras : [Git-Hub](https://github.com/twoarms/)
+- Maxime Christiaens : [Git-Hub](https://github.com/Maxime-Christiaens/)
+- Thomas Bailleux : [Git-Hub](https://github.com/BailleuxThomas/)
 
+## But du travail 
+Nous devions reproduire un layout ainsi que créer une newsletter
 
-stage merge : supprimer tout les éléments non utile tel que entree, menu2.html etc... les feuilles de style afin de n'avoir que l'essentielle et les fichiers à utiliser.
-Pour ma part j'ai supprimer le dossier sass et j'ai tout merge dans le style.scss dans scss
-Je dois finir de corriger les bugs visuel.
+## Notre Layout 
+[Pour le visiter](https://Twoarms.github.io/frontend-AllezCine/index.html)
 
+## Notre Newsletter
+[Pour la visualiser](https://maxime-christiaens.github.io/frontend-AllezCine-Newsletter/index.html)
+
+## Le layout à reproduire
+![Layout à reproduire](assets/imgs/layout.jpg)

@@ -241,105 +241,94 @@ main {
 body {
     background: $background;
 
-    //navbar
-    nav {
-        i {
-            margin-left: 13px; //pas fini//
-            /* color: red; */
+     //navbar
+     .navbar{
+        @media (max-width: 991px){
+            // margin:0;
+                //  position: inherit; // MENU RESPONSIVE FIXE //
+                 background-color: rgba($color: #000000, $alpha: 1);
         }
-    }
-
-    .navbar {
-        color: white !important;
+        color: white!important;
         margin-top: 1vh;
-        background-color: rgba($color: #000000, $alpha: 0.0) !important;
-
-        #navbarToggler {
-            @media (max-width: 992px) {
-                background-color: rgba($color: #000000, $alpha: 1.0) !important;
+        background-color: rgba($color: #000000, $alpha: 0.0);
+        #navbarToggler{
+            @media (max-width: 991px){
+                padding-left: 30px;
+            
             }
         }
-
+        
         //titre de la navbar (allezcine ici)
-        .navbar-brand {
+        .navbar-brand{
             font-size: 5vh;
             margin-left: 4vh;
             margin-right: 0vh;
             font-weight: bolder;
         }
-
-        .navbis {
-            width: 80%;
-
-            li {
-                list-style: none;
+        .navbis{
+            width: 80%; 
+            ul{
+                @media (max-width: 767px){
+                    width: 50px;
+                }
             }
-
-            form {
+            li{
+                list-style: none;
+            } 
+            form{
                 position: relative;
-
-                input {
+                input{
                     border: none;
                     border-top-left-radius: 30px;
                     border-bottom-left-radius: 25px;
                     background-color: rgba(0, 0, 0, 0.5);
                 }
-
                 button {
-                    border: none;
-                    position: absolute;
-                    color: white;
-                    font-size: 1.5em;
-                    top: 0;
-                    right: -36px;
-                    border-top-right-radius: 50%;
-                    border-bottom-right-radius: 50%;
-                    background-color: rgba(0, 0, 0, 0.5);
-
-                }
+                border: none;
+                position: absolute;
+                color: white;
+                font-size: 1.5em;
+                top: 0;
+                right:-21px;
+                border-top-right-radius: 50%;
+                border-bottom-right-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.5);
+                
             }
+        }  
         }
-
-        a {
-            color: white;
+        a{
+            color:white;
             padding: 0%;
             margin: 0%;
         }
-
-        a.home {
+        a.home{
             color: $grenat;
         }
-
         //menu déroulant
-        ul {
+        ul{
             padding: 0% 0vh;
             margin: 0%;
-
-            li {
+            li{
                 background-color: rgba(150, 150, 150, 0.5);
                 margin-right: 0.5vh;
-
-                &:hover {
+                &:hover{
                     background-color: rgba($color: $grenat, $alpha: 1.0);
                 }
             }
         }
-
         //stylise les dropdown links 
-        a.dropdown-item {
-            color: black !important;
+        a.dropdown-item{
+            color: black!important;
         }
-
-        p {
+        p{
             margin: 0%;
         }
-
         //search bar 
-        .searchNav {
+        .searchNav{
             padding: 0 0 0 0;
             margin: 0 0 5vh 0;
-
-            input {
+            input{
                 margin: 0%;
                 padding: 0 0 0 0;
                 border-radius: 15vh;
@@ -767,6 +756,9 @@ body {
             background-color: #e9383f;
             color: white;
             width: 20%;
+            @media (max-width: 991px){
+                width: 40%;
+            }
         }
 
         #formulaire {
@@ -801,7 +793,8 @@ body {
 
 // Footer
 footer {
-    padding: 0vh;
+    padding: 0;
+    margin: 0;
     color: white;
     background: $backgroundfooter;
 
@@ -833,6 +826,8 @@ footer {
     }
 
     h2 {
+        padding: 0;
+        margin: 0;
         color: #dc3545;
         text-align: center;
     }
@@ -888,7 +883,8 @@ footer {
     }
 
     .divsub {
-        margin-bottom: 5vh;
+        padding: 0;
+        margin: 0 0 5vh 0;
     }
 
     li.footlogo {
