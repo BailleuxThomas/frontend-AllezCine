@@ -221,7 +221,7 @@ body {
 body .navbar {
   color: white !important;
   margin-top: 1vh;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 @media (max-width: 991px) {
   body .navbar {
@@ -704,6 +704,7 @@ body #ButtonMessage {
   margin: 1% 0;
   background-color: #e9383f;
   color: white;
+  width: 20%;
 }
 @media (max-width: 991px) {
   body #ButtonMessage {
@@ -872,3 +873,5 @@ footer .footborder {
     display: none;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
