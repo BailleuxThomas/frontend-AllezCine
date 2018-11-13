@@ -791,6 +791,12 @@ body #ButtonMessage {
   width: 20%;
 }
 
+@media (max-width: 991px) {
+  body #ButtonMessage {
+    width: 40%;
+  }
+}
+
 body #formulaire {
   width: 80%;
   color: black;

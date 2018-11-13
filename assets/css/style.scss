@@ -756,6 +756,9 @@ body {
             background-color: #e9383f;
             color: white;
             width: 20%;
+            @media (max-width: 991px){
+                width: 40%;
+            }
         }
 
         #formulaire {
