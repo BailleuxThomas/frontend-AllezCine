@@ -203,7 +203,6 @@ body .navbar {
 }
 @media (max-width: 991px) {
   body .navbar {
-    margin: 0;
     background-color: black;
   }
 }
