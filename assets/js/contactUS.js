@@ -1,3 +1,4 @@
+const contactUs = document.getElementById("contactUs");
 const ButtonMessage = document.getElementById("ButtonMessage");
 const formulaire = document.getElementById("formulaire");
 const buttonSendContactUS = document.getElementById("buttonSendContactUS");
@@ -11,10 +12,12 @@ const Message = document.getElementById("Message");
 
 ButtonMessage.addEventListener("click", function(){
     formulaire.style.display = "block"; //affiche le formulaire
+    contactUs.className += " active";
 });
 
 CancelMessage.addEventListener("click", function(){
     formulaire.style.display = "none"; //cache le formulaire
+    CancelMessage.setAttribute("class", "");
 });
 
 /*

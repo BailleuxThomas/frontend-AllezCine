@@ -623,41 +623,31 @@ body .btn:focus, body .btn.focus {
 }
 body .contactDIV {
   width: 100%;
-  height: 75vh;
+  height: 30vh;
+  z-index: 99;
+  position: relative;
 }
-body .contactDIV .contactTitle {
-  height: 15%;
-}
-body .contactDIV .contactTitle .H3ContactTitle {
-  border-left: 5px #e9383f solid;
-  width: 25%;
-  height: 100%;
-  margin-left: 07%;
-  padding-left: 01%;
-  font-weight: bold;
-  font-size: 5vh;
-}
-body .contactDIV #ButtonMessage {
+body #ButtonMessage {
   margin: 1% 0;
   background-color: #e9383f;
   color: white;
   width: 20%;
 }
-body .contactDIV #formulaire {
+body #formulaire {
   width: 80%;
   color: black;
   background-color: white;
   height: fit-content;
   display: none;
 }
-body .contactDIV #formulaire #FormuSubDIV #FormuContactUS {
+body #formulaire #FormuSubDIV #FormuContactUS {
   height: fit-content;
 }
-body .contactDIV #formulaire #FormuSubDIV #FormuContactUS .btnContactUS {
+body #formulaire #FormuSubDIV #FormuContactUS .btnContactUS {
   background-color: #e9383f;
   color: white;
 }
-body .contactDIV #formulaire #FormuSubDIV #FormuContactUS .btnCancelMessage {
+body #formulaire #FormuSubDIV #FormuContactUS .btnCancelMessage {
   background-color: #e9383f;
   color: white;
 }
