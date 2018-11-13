@@ -9,7 +9,7 @@ Ce repo contient le produit du travail d'une merveilleuse team :
 Nous devions reproduire un layout ainsi que créer une newsletter
 
 ## Notre Layout 
-[Pour le visiter]()
+[Pour le visiter](https://maxime-christiaens.github.io/frontend-AllezCine/index.html)
 
 ## Notre Newsletter
 [Pour la visualiser](https://maxime-christiaens.github.io/frontend-AllezCine-Newsletter/index.html)
