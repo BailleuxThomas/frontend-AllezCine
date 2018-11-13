@@ -12,7 +12,7 @@ Nous devions reproduire un layout ainsi que créer une newsletter
 ![Pour le visiter]()
 
 ## Notre Newsletter
-![Pour la visualiser](https://maxime-christiaens.github.io/frontend-AllezCine-Newsletter/)
+![Pour la visualiser](https://maxime-christiaens.github.io/frontend-AllezCine-Newsletter/index.html)
 
 ## Le layout à reproduire
 ![Layout à reproduire](assets/imgs/layout.jpg)
