@@ -13,11 +13,13 @@ const Message = document.getElementById("Message");
 ButtonMessage.addEventListener("click", function(){
     formulaire.style.display = "block"; //affiche le formulaire
     contactUs.className += " active";
+    return false;
 });
 
 CancelMessage.addEventListener("click", function(){
     formulaire.style.display = "none"; //cache le formulaire
     CancelMessage.setAttribute("class", "");
+    return false;
 });
 
 /*
