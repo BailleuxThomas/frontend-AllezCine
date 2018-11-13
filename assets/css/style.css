@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1,
@@ -45,12 +46,12 @@ main {
   width: 100%;
   height: 100%;
 }
+
 .hideContent #ageCheckBox {
   background: #fff;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   max-width: 90%;
   max-height: 90%;
@@ -70,11 +71,11 @@ main {
   border: 2px solid #000000;
   color: white;
   -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
   -ms-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
   -o-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
 }
+
 @media screen and (min-width: 980px) {
   .cookieInfo .cookieInfo {
     position: fixed;
@@ -85,10 +86,16 @@ main {
     overflow: auto;
   }
 }
+
 .cookieInfo .cookieBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .cookieInfo .cookieBtns .cookieBtn {
   width: 30%;
 }
@@ -96,6 +103,7 @@ main {
 .accountform {
   border: 3px solid #f1f1f1;
 }
+
 .accountform input[type=text],
 .accountform input[type=password] {
   width: 100%;
@@ -105,6 +113,7 @@ main {
   border: none;
   background: #f1f1f1;
 }
+
 .accountform button {
   background-color: #4CAF50;
   color: white;
@@ -114,28 +123,34 @@ main {
   cursor: pointer;
   width: 100%;
 }
+
 .accountform button:hover {
   opacity: 0.8;
 }
+
 .accountform .cancelBtn,
 .accountform #goOut {
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
 }
+
 .accountform .container {
   padding: 16px;
 }
+
 .accountform span.psw {
   float: right;
   padding-top: 16px;
 }
+
 @media screen and (max-width: 300px) {
   .accountform span.psw {
     display: block;
     float: none;
   }
 }
+
 .accountform .modal {
   display: none;
   position: fixed;
@@ -149,12 +164,14 @@ main {
   background-color: rgba(0, 0, 0, 0.4);
   padding-top: 60px;
 }
+
 .accountform .modal-content {
   background-color: #fefefe;
   margin: 5px auto;
   border: 1px solid #888;
   width: 80%;
 }
+
 .accountform .close {
   position: absolute;
   right: 25px;
@@ -163,15 +180,18 @@ main {
   font-size: 35px;
   font-weight: bold;
 }
+
 .accountform .close:hover,
 .accountform .close:focus {
   color: red;
   cursor: pointer;
 }
+
 .accountform .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s;
 }
+
 @-webkit-keyframes animatezoom {
   from {
     -webkit-transform: scale(0);
@@ -180,14 +200,18 @@ main {
     -webkit-transform: scale(1);
   }
 }
+
 @keyframes animatezoom {
   from {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   to {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
+
 .accountform hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
@@ -196,47 +220,57 @@ main {
 body {
   background: #e3f2fd;
 }
+
 body .navbar {
   color: white !important;
   margin-top: 1vh;
   background-color: rgba(0, 0, 0, 0);
 }
+
 @media (max-width: 991px) {
   body .navbar {
     background-color: black;
   }
 }
+
 @media (max-width: 991px) {
   body .navbar #navbarToggler {
     padding-left: 30px;
   }
 }
+
 body .navbar .navbar-brand {
   font-size: 5vh;
   margin-left: 4vh;
   margin-right: 0vh;
   font-weight: bolder;
 }
+
 body .navbar .navbis {
   width: 80%;
 }
+
 @media (max-width: 767px) {
   body .navbar .navbis ul {
     width: 50px;
   }
 }
+
 body .navbar .navbis li {
   list-style: none;
 }
+
 body .navbar .navbis form {
   position: relative;
 }
+
 body .navbar .navbis form input {
   border: none;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 25px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 body .navbar .navbis form button {
   border: none;
   position: absolute;
@@ -248,40 +282,50 @@ body .navbar .navbis form button {
   border-bottom-right-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 body .navbar a {
   color: white;
   padding: 0%;
   margin: 0%;
 }
+
 body .navbar a.home {
   color: #e9383f;
 }
+
 body .navbar ul {
   padding: 0% 0vh;
   margin: 0%;
 }
+
 body .navbar ul li {
   background-color: rgba(150, 150, 150, 0.5);
   margin-right: 0.5vh;
 }
+
 body .navbar ul li:hover {
   background-color: #e9383f;
 }
+
 body .navbar a.dropdown-item {
   color: black !important;
 }
+
 body .navbar p {
   margin: 0%;
 }
+
 body .navbar .searchNav {
   padding: 0 0 0 0;
   margin: 0 0 5vh 0;
 }
+
 body .navbar .searchNav input {
   margin: 0%;
   padding: 0 0 0 0;
   border-radius: 15vh;
 }
+
 body ul.menuleft {
   margin: 0vh;
   padding: 0vh;
@@ -291,23 +335,30 @@ body ul.menuleft {
   top: 8rem;
   z-index: 500;
 }
+
 body ul.menuleft a {
   color: white;
 }
+
 body ul.menuleft a:hover {
   color: YELLOW;
   text-decoration: none;
 }
+
 body ul.menuleft li {
   position: relative;
   text-align: center;
   right: 18vh;
-  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
+
 body ul.menuleft li:hover {
   right: 5vh;
 }
+
 body ul.menuleft i.fab {
   width: 4vh;
   position: absolute;
@@ -317,30 +368,35 @@ body ul.menuleft i.fab {
   line-height: inherit;
   color: black;
 }
+
 body ul.menuleft li.twitter {
   border: 3px solid #00acee;
   border-left: none;
   border-radius: 3vh;
   background: #00acee;
 }
+
 body ul.menuleft li.facebook {
   border: 3px solid #3b5998;
   border-left: none;
   border-radius: 3vh;
   background: #3b5998;
 }
+
 body ul.menuleft li.insta {
   border: 3px solid #3f729b;
   border-left: none;
   border-radius: 3vh;
   background: #3f729b;
 }
+
 body ul.menuleft li.google {
   border: 3px solid #db3236;
   border-left: none;
   border-radius: 3vh;
   background: #db3236;
 }
+
 body .jumbotron {
   width: 100%;
   height: 70vh;
@@ -348,106 +404,144 @@ body .jumbotron {
   padding: 0% !important;
   margin: 0 !important;
 }
+
 body .jumbotron div {
   width: 100%;
   height: 70vh;
 }
+
 body .jumbotron div ul li {
   margin-bottom: 10vh;
   background-color: white;
 }
+
 @media (max-width: 992px) {
   body .jumbotron div ul li {
     margin: 1vh;
   }
 }
+
 body .jumbotron div ul li.active {
   background-color: #e9383f !important;
 }
+
 body .jumbotron div h2 {
   font-size: 8vh;
 }
+
 body .jumbotron div p {
   margin: 3vh 0 3vh 0;
   font-size: 2vh;
   color: rgba(255, 255, 255, 0.7);
 }
+
 body .jumbotron div img {
   width: 100%;
   height: 100%;
 }
+
 body .jumbotron div .carousel-caption {
   width: auto;
   height: auto;
   margin: 18vh;
   padding: 0% !important;
 }
+
 @media (max-width: 992px) {
   body .jumbotron div .carousel-caption {
     margin: 9vh;
   }
 }
+
 body .jumbotron div .carousel-caption a {
   color: white;
   background-color: #e9383f;
   padding: 1vh 2vh;
 }
+
 body .jumbotron div .carousel-caption a:hover {
   text-decoration: none;
 }
+
 body .jumbotron div .carousel-caption .input-formu {
   width: 100%;
 }
+
 body .accountbar {
   background: #e9383f;
 }
+
 body .modal .description {
   padding: 20px 5px 0px 5px;
 }
+
 body .modal .infos {
   border-top: #FF4037 2px solid;
   padding: 5px;
 }
+
 body .modal .infos ul li {
   list-style: none;
 }
+
 body .newsMovie, body .featuredMovies, body .featuredSeries, body .shopMovies {
   width: 100%;
   margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 body .newsMovie .movieContainer, body .featuredMovies .movieContainer, body .featuredSeries .movieContainer, body .shopMovies .movieContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: black;
   padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   border-radius: 5px;
   border: 2px solid #F2F2F2;
 }
+
 body .newsMovie .movieContainer .afficheContainer, body .featuredMovies .movieContainer .afficheContainer, body .featuredSeries .movieContainer .afficheContainer, body .shopMovies .movieContainer .afficheContainer {
   padding: 0;
   margin: 0px;
   position: relative;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 body .newsMovie .movieContainer .affiche, body .featuredMovies .movieContainer .affiche, body .featuredSeries .movieContainer .affiche, body .shopMovies .movieContainer .affiche {
   padding: 0;
   color: #4B5155;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 body .newsMovie .movieContainer .affiche:hover, body .featuredMovies .movieContainer .affiche:hover, body .featuredSeries .movieContainer .affiche:hover, body .shopMovies .movieContainer .affiche:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
+
 body .newsMovie .movieContainer .affiche img, body .featuredMovies .movieContainer .affiche img, body .featuredSeries .movieContainer .affiche img, body .shopMovies .movieContainer .affiche img {
   width: 100%;
   height: 70%;
 }
+
 body .newsMovie .movieContainer .affiche .afficheFooter, body .featuredMovies .movieContainer .affiche .afficheFooter, body .featuredSeries .movieContainer .affiche .afficheFooter, body .shopMovies .movieContainer .affiche .afficheFooter {
   background: white;
   position: absolute;
@@ -455,12 +549,14 @@ body .newsMovie .movieContainer .affiche .afficheFooter, body .featuredMovies .m
   width: 100%;
   height: 30%;
 }
+
 body .newsMovie .movieContainer .affiche .afficheFooter .title, body .featuredMovies .movieContainer .affiche .afficheFooter .title, body .featuredSeries .movieContainer .affiche .afficheFooter .title, body .shopMovies .movieContainer .affiche .afficheFooter .title {
   font-size: 0.7em;
   margin-bottom: 0;
   text-align: center;
   padding-top: 3px;
 }
+
 body .newsMovie .movieContainer .affiche .afficheFooter .date, body .newsMovie .movieContainer .affiche .afficheFooter .genre, body .featuredMovies .movieContainer .affiche .afficheFooter .date, body .featuredMovies .movieContainer .affiche .afficheFooter .genre, body .featuredSeries .movieContainer .affiche .afficheFooter .date, body .featuredSeries .movieContainer .affiche .afficheFooter .genre, body .shopMovies .movieContainer .affiche .afficheFooter .date, body .shopMovies .movieContainer .affiche .afficheFooter .genre {
   font-size: 0.6em;
   text-align: left;
@@ -468,100 +564,137 @@ body .newsMovie .movieContainer .affiche .afficheFooter .date, body .newsMovie .
   display: inline-block;
   margin: 0;
 }
+
 body .newsMovie .movieContainer .affiche .afficheFooter .genre, body .featuredMovies .movieContainer .affiche .afficheFooter .genre, body .featuredSeries .movieContainer .affiche .afficheFooter .genre, body .shopMovies .movieContainer .affiche .afficheFooter .genre {
   text-align: right;
   font-weight: 700;
 }
+
 body .featuredMovies, body .featuredSeries, body .shopMovies {
   padding: 0px;
 }
+
 body .featuredMovies .movieContainer, body .featuredSeries .movieContainer, body .shopMovies .movieContainer {
-  justify-content: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   border: none;
   padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
+
 body .featuredMovies .movieContainer .affiche, body .featuredSeries .movieContainer .affiche, body .shopMovies .movieContainer .affiche {
   padding: 3px;
 }
+
 body .featuredMovies .title, body .featuredSeries .title, body .shopMovies .title {
   font-weight: 700;
 }
+
 body .featuredMovies .genre, body .featuredSeries .genre, body .shopMovies .genre {
   visibility: hidden;
 }
+
 body .shopMovies {
   padding: 0px;
 }
+
 body .shopMovies .movieContainer {
-  justify-content: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   border: none;
   padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
+
 body .shopMovies .movieContainer .affiche {
   padding: 3px;
 }
+
 body .shopMovies .movieContainer .affiche .img {
   width: 100%;
   height: 100%;
 }
+
 body .shopMovies .movieContainer .affiche .afficheFooter {
   position: absolute;
   bottom: 0px;
 }
+
 body .shopMovies .movieContainer .affiche .afficheFooter .title {
   font-weight: 700;
 }
+
 body .shopMovies .movieContainer .affiche .afficheFooter .genre {
   visibility: hidden;
 }
+
 body .shopMovies .moviePlay {
   max-width: 340px;
   max-height: 350px;
   background: black;
   margin: 3px 0px;
   padding: 0;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
+
 body .shopMovies .moviePlay:hover {
-  transform-origin: top center;
-  transform: scale(1.2);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 body .shopMovies .moviePlay .arrow {
   position: absolute;
   top: -25px;
   right: 5px;
 }
+
 body .shopMovies .moviePlay .arrow i {
   margin-left: 5px;
   background: #4B5155;
   padding: 5px;
   color: white;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 body .shopMovies .moviePlay .arrow i:hover {
   margin-left: 5px;
   background: #FF4037;
   padding: 5px;
   color: white;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 body .shopMovies .moviePlay .movie {
   width: 100%;
   text-align: center;
 }
+
 body .shopMovies .moviePlay .movie .youtubeMovie {
   opacity: 0.7;
+  -webkit-transition: all 1s;
   transition: all 1s;
   overflow: hidden;
 }
+
 body .shopMovies .moviePlay .movie img {
-  transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
   margin: 0px;
   opacity: 0.7;
 }
+
 body .shopMovies .moviePlay .infoMovie {
   padding: 10px;
   background: #000;
@@ -570,37 +703,48 @@ body .shopMovies .moviePlay .infoMovie {
   position: absolute;
   bottom: 0px;
 }
+
 body .shopMovies .moviePlay .infoMovie .genre {
   visibility: inherit;
 }
+
 body .shopMovies .moviePlay .infoMovie ul {
   list-style: none;
   padding: 0px;
   margin: 0;
 }
+
 body .shopMovies .moviePlay .infoMovie ul .title {
   font-size: 1.5em;
 }
+
 body .shopMovies .moviePlay .infoMovie ul li {
   width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
+
 body .shopMovies .moviePlay .infoMovie ul li p {
   margin-bottom: 2px;
 }
+
 body .shopMovies .moviePlay .infoMovie ul li p:first-child {
   width: 30%;
 }
+
 body .shopMovies .moviePlay .infoMovie ul li p {
   width: 70%;
   color: #F2F0F1;
 }
+
 body .btn-select-cat {
   margin-left: 138px;
   margin-bottom: 20px;
   padding: 3px;
   font-family: "Montserrat", sans-serif;
 }
+
 body .btn-select-cat .btn {
   font-size: 0.6em;
   width: 60px;
@@ -610,52 +754,71 @@ body .btn-select-cat .btn {
   border-radius: 0;
   color: #4B5155;
 }
+
 body .btn-select-cat .btn.active {
   color: #fff;
   background: #FF4037;
 }
+
 body .btn-select-cat .btn:hover {
   color: #4B5155;
   background: #fff;
 }
+
 body .btn.more-movie {
   background: #FF4037;
   color: #fff;
   border-radius: 0px;
   font-size: 0.8em;
 }
+
 body .btn:focus, body .btn.focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
+
 body .contactDIV {
   width: 100%;
   height: 30vh;
   z-index: 99;
   position: relative;
 }
+
 body #ButtonMessage {
   margin: 1% 0;
   background-color: #e9383f;
   color: white;
   width: 20%;
 }
+
 body #formulaire {
   width: 80%;
   color: black;
   background-color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   display: none;
 }
+
 body #formulaire #FormuSubDIV #FormuContactUS {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
+
 body #formulaire #FormuSubDIV #FormuContactUS .btnContactUS {
   background-color: #e9383f;
   color: white;
 }
+
 body #formulaire #FormuSubDIV #FormuContactUS .btnCancelMessage {
   background-color: #e9383f;
   color: white;
+}
+
+body #formulaire #FormuSubDIV .input-formu {
+  width: 100%;
 }
 
 footer {
@@ -664,42 +827,55 @@ footer {
   color: white;
   background: black;
 }
+
 footer .footmarge {
   margin-top: 4vh;
 }
+
 footer ul {
   padding: 0;
 }
+
 footer ul li {
   list-style-type: none;
 }
+
 footer a {
   display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   margin: 0;
   padding: 0;
   color: white;
-  justify-content: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
+
 footer .imagefooter {
   padding: 0;
   margin: 0;
   width: 140%;
 }
+
 footer h2 {
   padding: 0;
   margin: 0;
   color: #dc3545;
   text-align: center;
 }
+
 footer ul.release li.footrelease a {
   color: grey;
   text-decoration: none;
 }
+
 footer ul.movies li.footmovies a {
   color: grey;
   text-decoration: none;
 }
+
 footer .Category a {
   text-decoration: none;
   color: #fff;
@@ -709,28 +885,37 @@ footer .Category a {
   height: auto;
   background-color: grey;
 }
+
 footer ul.lastmovies li img {
   color: grey;
 }
+
 footer h4 {
   font-size: 2vh;
 }
+
 footer h4.video {
   color: #dc3545;
   font-size: 5vh;
   text-align: left;
 }
+
 footer h4.video span {
   color: white;
 }
+
 footer .divsub {
   padding: 0;
   margin: 0 0 5vh 0;
 }
+
 footer li.footlogo {
   margin-bottom: 1vh;
 }
+
 footer .footborder {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   border-bottom: 0.1vh solid yellow;
 }
@@ -754,6 +939,7 @@ footer .footborder {
   right: -110px;
   opacity: 1;
 }
+
 #arrow .arrow:hover {
   color: black;
 }
@@ -761,12 +947,15 @@ footer .footborder {
 .col-lg-12 .footerfin {
   font-size: 2vh;
 }
+
 .col-lg-12 .footerfin a {
   text-decoration: none;
 }
+
 .col-lg-12 .footerfin a:hover {
   color: orangered;
 }
+
 .col-lg-12 .footerfin i {
   margin-right: 1vh;
   padding: 1vh;
@@ -793,10 +982,10 @@ footer .footborder {
     width: 10vh;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .imagefooter2 {
     display: none;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
