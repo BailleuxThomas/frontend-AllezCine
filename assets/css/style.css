@@ -31,7 +31,6 @@ html {
 
 main {
   margin: 0 auto;
-  max-width: 850px;
 }
 
 .hideContent {
@@ -199,7 +198,7 @@ body {
 body .navbar {
   color: white !important;
   margin-top: 1vh;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
 }
 @media (max-width: 991px) {
   body .navbar {
@@ -637,7 +636,6 @@ body #ButtonMessage {
   margin: 1% 0;
   background-color: #e9383f;
   color: white;
-  width: 20%;
 }
 body #formulaire {
   width: 80%;
@@ -798,5 +796,3 @@ footer .footborder {
     display: none;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

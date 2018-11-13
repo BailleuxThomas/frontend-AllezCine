@@ -96,50 +96,62 @@ function afficheMaker(object, taille) {
 				  `
 
 }
+
 // function pour construction des modals 
 function modalMaker() {
-	`
-	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-		 aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">${element.title}</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<!-- CONTAIN -->
-					<div class="modal-body">
-						<section class="preview">
-							<div class="embed-responsive embed-responsive-16by9">
-								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f64h6dc2rqM?controls=0;autoplay=1" allowfullscreen></iframe>
+	affiche = document.querySelectorAll("affiche")
+	console.log(affiche)
+	// Listen to all clicks on the document
+	document.addEventListener('click', function (event) {
+		var target = event.target;
+		//console.log(target.src)
+		for (let i = 0; i < array.length; i++) {
+			if(array[i].alt == target.alt) {
+				console.log(i)
+				modal = `
+				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+					 aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">${array[i].title}</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<!-- CONTAIN -->
+								<div class="modal-body">
+									<section class="preview">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe class="embed-responsive-item" src="${array[i].ytsrc}" allowfullscreen></iframe>
+										</div>
+										<div class="description">
+											<p>${array[i].story}</p>
+										</div>
+										<div class="infos">
+											<ul>
+												<li class="realisateur">Réalisateur : ${array[i].productor} </li>
+												<li class="date">Date de sortie : ${array[i].date}</li>
+												<li class="genre">Genre : ${array[i].genre}</li>
+												<li class="acteurs">Acteurs : ${array[i].actor}</li>
+											</ul>
+										</div>
+									</section>
+								</div>
+								<!-- CONTAIN -->
 							</div>
-							<div class="description">
-								<p>Après la mort de son épouse lors d'une violente agression qui l'a laissé paralysé, Grey Trace est
-									approché par un inventeur milliardaire qui propose de lui administrer un remède expérimental qui va
-									"upgrader" son corps et ses facultés. Désormais doté d'un implant fonctionnant à l'intelligence
-									artificielle, Grey voit ses capacités physiques décuplées et se lance dans une mission vengeresse,
-									afin de faire payer ceux qui ont tué sa femme.</p>
-							</div>
-							<div class="infos">
-								<ul>
-									<li class="realisateur">Réalisateur : Matt Reeves </li>
-									<li class="date">Date de sortie : Américain</li>
-									<li class="genre">Genre : Action, Fantastique</li>
-									<li class="acteurs">Acteurs : Joe Manganiello, J.K. Simmons, Jeremy Irons</li>
-								</ul>
-							</div>
-						</section>
-					</div>
-					<!-- CONTAIN -->
-				</div>
-			</div>
-		</div><!-- END div MODAL -->
-	`
+						</div>
+					</div><!-- END div MODAL -->
+				`
+				val = document.querySelectorAll(".modal-container")
+				val[0].innerHTML = modal;
+			}
+		}
+	});
+
 
 }
-
+modalMaker()
 // function pour afficher les films avec flèches suivant précédent
 i = 0;
 // film suivant
