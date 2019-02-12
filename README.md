@@ -1,5 +1,5 @@
 # frontend-AllezCine
-Ce repo contient le produit du travail d'une merveilleuse team :
+> Ce repo contient le produit du travail d'une merveilleuse team :
 - David Bouzouita : [Git-Hub](https://github.com/bouzouitadavid)
 - Mathieu Debras : [Git-Hub](https://github.com/twoarms/)
 - Maxime Christiaens : [Git-Hub](https://github.com/Maxime-Christiaens/)
@@ -8,8 +8,8 @@ Ce repo contient le produit du travail d'une merveilleuse team :
 ## But du travail 
 Nous devions reproduire un layout ainsi que créer une newsletter
 
-## Notre Layout 
-[Pour le visiter](https://Twoarms.github.io/frontend-AllezCine/index.html)
+## Notre Site 
+[Pour la visualiser](https://bouzouitadavid.github.io/frontend-AllezCine/)
 
 ## Notre Newsletter
 [Pour la visualiser](https://maxime-christiaens.github.io/frontend-AllezCine-Newsletter/index.html)
